@@ -33,3 +33,16 @@ C:\Users\Dat\Desktop\Rabbit-s-House\Rabbit's House\Rabbit's House\obj\Debug\Rabb
 C:\Users\Dat\Desktop\Rabbit-s-House\Rabbit's House\Rabbit's House\obj\Debug\Rabbit's House.csproj.CoreCompileInputs.cache
 C:\Users\Dat\Desktop\Rabbit-s-House\Rabbit's House\Rabbit's House\obj\Debug\Rabbit's House.exe
 C:\Users\Dat\Desktop\Rabbit-s-House\Rabbit's House\Rabbit's House\obj\Debug\Rabbit's House.pdb
+C:\Users\Dat\Desktop\Rabbit-s-House-2\Rabbit's House\Rabbit's House\bin\Debug\Rabbit's House.exe.config
+C:\Users\Dat\Desktop\Rabbit-s-House-2\Rabbit's House\Rabbit's House\bin\Debug\Rabbit's House.exe
+C:\Users\Dat\Desktop\Rabbit-s-House-2\Rabbit's House\Rabbit's House\bin\Debug\Rabbit's House.pdb
+C:\Users\Dat\Desktop\Rabbit-s-House-2\Rabbit's House\Rabbit's House\obj\Debug\Rabbit's House.csprojAssemblyReference.cache
+C:\Users\Dat\Desktop\Rabbit-s-House-2\Rabbit's House\Rabbit's House\obj\Debug\Rabbit_s_House.Cafe.resources
+C:\Users\Dat\Desktop\Rabbit-s-House-2\Rabbit's House\Rabbit's House\obj\Debug\Rabbit_s_House.frmLogin.resources
+C:\Users\Dat\Desktop\Rabbit-s-House-2\Rabbit's House\Rabbit's House\obj\Debug\Rabbit_s_House.frmIndex.resources
+C:\Users\Dat\Desktop\Rabbit-s-House-2\Rabbit's House\Rabbit's House\obj\Debug\Rabbit_s_House.frmManager.resources
+C:\Users\Dat\Desktop\Rabbit-s-House-2\Rabbit's House\Rabbit's House\obj\Debug\Rabbit_s_House.Properties.Resources.resources
+C:\Users\Dat\Desktop\Rabbit-s-House-2\Rabbit's House\Rabbit's House\obj\Debug\Rabbit's House.csproj.GenerateResource.cache
+C:\Users\Dat\Desktop\Rabbit-s-House-2\Rabbit's House\Rabbit's House\obj\Debug\Rabbit's House.csproj.CoreCompileInputs.cache
+C:\Users\Dat\Desktop\Rabbit-s-House-2\Rabbit's House\Rabbit's House\obj\Debug\Rabbit's House.exe
+C:\Users\Dat\Desktop\Rabbit-s-House-2\Rabbit's House\Rabbit's House\obj\Debug\Rabbit's House.pdb

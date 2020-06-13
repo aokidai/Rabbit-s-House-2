@@ -87,7 +87,7 @@
             tabPage1.ImeMode = System.Windows.Forms.ImeMode.On;
             tabPage1.Location = new System.Drawing.Point(4, 22);
             tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            tabPage1.Padding = new System.Windows.Forms.Padding(3);
             tabPage1.Size = new System.Drawing.Size(280, 549);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Cafe";
@@ -187,7 +187,7 @@
             this.tabPage2.Controls.Add(this.button5);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(280, 549);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Nước Ngọt";
@@ -277,7 +277,7 @@
             this.tabPage3.Controls.Add(this.button13);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(280, 549);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Đồ ăn vặt";
@@ -425,7 +425,7 @@
             this.tolSpPrint});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1028, 47);
+            this.toolStrip1.Size = new System.Drawing.Size(1346, 47);
             this.toolStrip1.TabIndex = 5;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -497,7 +497,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Rabbit_s_House.Properties.Resources.bg;
-            this.ClientSize = new System.Drawing.Size(1028, 636);
+            this.ClientSize = new System.Drawing.Size(1346, 636);
             this.ControlBox = false;
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.dataGridView1);

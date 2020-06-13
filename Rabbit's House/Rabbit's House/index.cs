@@ -36,10 +36,13 @@ namespace Rabbit_s_House
 
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
             this.Close();
-            frmLogin login = new frmLogin();
-            login.Show();
+            Application.Restart();
+           // frmIndex fi = new frmIndex();
+            //Application.Run( new frmLogin());
+          //  fi.Close();
+            //frmLogin login = new frmLogin();
+           // login.Show();
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
