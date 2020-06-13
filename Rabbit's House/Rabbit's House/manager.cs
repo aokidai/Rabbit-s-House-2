@@ -22,6 +22,9 @@ namespace Rabbit_s_House
 
         }
 
-      
+        private void frmManager_Load(object sender, EventArgs e)
+        {
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+        }
     }
 }

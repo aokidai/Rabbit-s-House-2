@@ -170,7 +170,7 @@
             this.tabControl1.Controls.Add(tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Location = new System.Drawing.Point(12, 49);
+            this.tabControl1.Location = new System.Drawing.Point(12, 59);
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -370,7 +370,7 @@
             this.Gia,
             this.Giamgia,
             this.Sdt});
-            this.dataGridView1.Location = new System.Drawing.Point(301, 72);
+            this.dataGridView1.Location = new System.Drawing.Point(301, 82);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(754, 548);
@@ -497,14 +497,16 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Rabbit_s_House.Properties.Resources.bg;
-            this.ClientSize = new System.Drawing.Size(1346, 636);
+            this.ClientSize = new System.Drawing.Size(1346, 651);
             this.ControlBox = false;
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmManager";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Welcome";
+            this.Load += new System.EventHandler(this.frmManager_Load);
             tabPage1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
