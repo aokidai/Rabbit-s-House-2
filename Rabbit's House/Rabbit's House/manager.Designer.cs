@@ -85,10 +85,11 @@
             tabPage1.Controls.Add(this.button3);
             tabPage1.Controls.Add(this.button1);
             tabPage1.ImeMode = System.Windows.Forms.ImeMode.On;
-            tabPage1.Location = new System.Drawing.Point(4, 22);
+            tabPage1.Location = new System.Drawing.Point(4, 25);
+            tabPage1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            tabPage1.Size = new System.Drawing.Size(280, 549);
+            tabPage1.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            tabPage1.Size = new System.Drawing.Size(376, 634);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Cafe";
             tabPage1.UseVisualStyleBackColor = true;
@@ -97,9 +98,10 @@
             // 
             this.button8.BackColor = System.Drawing.Color.White;
             this.button8.Image = global::Rabbit_s_House.Properties.Resources.caramel_da_xay_1545123727;
-            this.button8.Location = new System.Drawing.Point(140, 278);
+            this.button8.Location = new System.Drawing.Point(187, 321);
+            this.button8.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(130, 130);
+            this.button8.Size = new System.Drawing.Size(173, 150);
             this.button8.TabIndex = 0;
             this.button8.Text = "Caramel Đá Xay";
             this.button8.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -109,9 +111,10 @@
             // 
             this.button4.BackColor = System.Drawing.Color.White;
             this.button4.Image = global::Rabbit_s_House.Properties.Resources.images;
-            this.button4.Location = new System.Drawing.Point(140, 142);
+            this.button4.Location = new System.Drawing.Point(187, 164);
+            this.button4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(130, 130);
+            this.button4.Size = new System.Drawing.Size(173, 150);
             this.button4.TabIndex = 0;
             this.button4.Text = "Ca Cao";
             this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -121,9 +124,10 @@
             // 
             this.button2.BackColor = System.Drawing.Color.White;
             this.button2.Image = global::Rabbit_s_House.Properties.Resources.bac_siu;
-            this.button2.Location = new System.Drawing.Point(142, 6);
+            this.button2.Location = new System.Drawing.Point(189, 7);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(130, 130);
+            this.button2.Size = new System.Drawing.Size(173, 150);
             this.button2.TabIndex = 0;
             this.button2.Text = "White ";
             this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -133,9 +137,10 @@
             // 
             this.button7.BackColor = System.Drawing.Color.White;
             this.button7.Image = global::Rabbit_s_House.Properties.Resources.download;
-            this.button7.Location = new System.Drawing.Point(4, 278);
+            this.button7.Location = new System.Drawing.Point(5, 321);
+            this.button7.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(130, 130);
+            this.button7.Size = new System.Drawing.Size(173, 150);
             this.button7.TabIndex = 0;
             this.button7.Text = "Socala Đá Xay";
             this.button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -145,9 +150,10 @@
             // 
             this.button3.BackColor = System.Drawing.Color.White;
             this.button3.Image = global::Rabbit_s_House.Properties.Resources.cafe_sua_nong_min;
-            this.button3.Location = new System.Drawing.Point(4, 142);
+            this.button3.Location = new System.Drawing.Point(5, 164);
+            this.button3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(130, 130);
+            this.button3.Size = new System.Drawing.Size(173, 150);
             this.button3.TabIndex = 0;
             this.button3.Text = "Milk coffee";
             this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -157,9 +163,10 @@
             // 
             this.button1.BackColor = System.Drawing.Color.White;
             this.button1.Image = global::Rabbit_s_House.Properties.Resources.den2;
-            this.button1.Location = new System.Drawing.Point(6, 6);
+            this.button1.Location = new System.Drawing.Point(8, 7);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(130, 130);
+            this.button1.Size = new System.Drawing.Size(173, 150);
             this.button1.TabIndex = 0;
             this.button1.Text = "Black coffee";
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -170,11 +177,12 @@
             this.tabControl1.Controls.Add(tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Location = new System.Drawing.Point(12, 59);
+            this.tabControl1.Location = new System.Drawing.Point(16, 68);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(288, 575);
+            this.tabControl1.Size = new System.Drawing.Size(384, 663);
             this.tabControl1.TabIndex = 3;
             // 
             // tabPage2
@@ -185,10 +193,11 @@
             this.tabPage2.Controls.Add(this.button11);
             this.tabPage2.Controls.Add(this.button9);
             this.tabPage2.Controls.Add(this.button5);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(280, 549);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tabPage2.Size = new System.Drawing.Size(376, 634);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Nước Ngọt";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -197,9 +206,10 @@
             // 
             this.button12.BackColor = System.Drawing.Color.White;
             this.button12.Image = global::Rabbit_s_House.Properties.Resources.nuoc_ngot_sprite_chai_390ml1;
-            this.button12.Location = new System.Drawing.Point(143, 307);
+            this.button12.Location = new System.Drawing.Point(191, 354);
+            this.button12.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(130, 130);
+            this.button12.Size = new System.Drawing.Size(173, 150);
             this.button12.TabIndex = 0;
             this.button12.Text = "Sprite";
             this.button12.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -209,9 +219,10 @@
             // 
             this.button10.BackColor = System.Drawing.Color.White;
             this.button10.Image = global::Rabbit_s_House.Properties.Resources.images__1_;
-            this.button10.Location = new System.Drawing.Point(143, 160);
+            this.button10.Location = new System.Drawing.Point(191, 185);
+            this.button10.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(130, 130);
+            this.button10.Size = new System.Drawing.Size(173, 150);
             this.button10.TabIndex = 0;
             this.button10.Text = "Pepsi";
             this.button10.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -222,9 +233,10 @@
             // 
             this.button6.BackColor = System.Drawing.Color.White;
             this.button6.Image = global::Rabbit_s_House.Properties.Resources.Nước_Ngọt_Mirinda_Green_Cream_Flavor__330m_1;
-            this.button6.Location = new System.Drawing.Point(143, 6);
+            this.button6.Location = new System.Drawing.Point(191, 7);
+            this.button6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(130, 130);
+            this.button6.Size = new System.Drawing.Size(173, 150);
             this.button6.TabIndex = 0;
             this.button6.Text = "Mirida";
             this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -234,9 +246,10 @@
             // 
             this.button11.BackColor = System.Drawing.Color.White;
             this.button11.Image = global::Rabbit_s_House.Properties.Resources.thung_nuoc_ngot_fanta_cam_my_loc_12_lon_1_510x510;
-            this.button11.Location = new System.Drawing.Point(7, 307);
+            this.button11.Location = new System.Drawing.Point(9, 354);
+            this.button11.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(130, 130);
+            this.button11.Size = new System.Drawing.Size(173, 150);
             this.button11.TabIndex = 0;
             this.button11.Text = "Fanta";
             this.button11.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -246,9 +259,10 @@
             // 
             this.button9.BackColor = System.Drawing.Color.White;
             this.button9.Image = global::Rabbit_s_House.Properties.Resources.nuoc_ngot_7up_thai_lon_330ml;
-            this.button9.Location = new System.Drawing.Point(7, 160);
+            this.button9.Location = new System.Drawing.Point(9, 185);
+            this.button9.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(130, 130);
+            this.button9.Size = new System.Drawing.Size(173, 150);
             this.button9.TabIndex = 0;
             this.button9.Text = "7 Up";
             this.button9.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -259,9 +273,10 @@
             this.button5.BackColor = System.Drawing.Color.White;
             this.button5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button5.Image = global::Rabbit_s_House.Properties.Resources.coca_sleek_330ml_3_grande;
-            this.button5.Location = new System.Drawing.Point(7, 6);
+            this.button5.Location = new System.Drawing.Point(9, 7);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(130, 130);
+            this.button5.Size = new System.Drawing.Size(173, 150);
             this.button5.TabIndex = 0;
             this.button5.Text = "Coca";
             this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -275,10 +290,11 @@
             this.tabPage3.Controls.Add(this.button17);
             this.tabPage3.Controls.Add(this.button15);
             this.tabPage3.Controls.Add(this.button13);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(280, 549);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tabPage3.Size = new System.Drawing.Size(376, 634);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Đồ ăn vặt";
             // 
@@ -287,9 +303,10 @@
             this.button18.BackColor = System.Drawing.Color.White;
             this.button18.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button18.Image = global::Rabbit_s_House.Properties.Resources.hhh;
-            this.button18.Location = new System.Drawing.Point(142, 278);
+            this.button18.Location = new System.Drawing.Point(189, 321);
+            this.button18.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(130, 130);
+            this.button18.Size = new System.Drawing.Size(173, 150);
             this.button18.TabIndex = 1;
             this.button18.Text = "jelly cake";
             this.button18.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -300,9 +317,10 @@
             this.button16.BackColor = System.Drawing.Color.White;
             this.button16.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button16.Image = global::Rabbit_s_House.Properties.Resources._440px_Pancake_of_the_phases_of_the_moon;
-            this.button16.Location = new System.Drawing.Point(142, 142);
+            this.button16.Location = new System.Drawing.Point(189, 164);
+            this.button16.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(130, 130);
+            this.button16.Size = new System.Drawing.Size(173, 150);
             this.button16.TabIndex = 1;
             this.button16.Text = "Pancake";
             this.button16.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -313,9 +331,10 @@
             this.button14.BackColor = System.Drawing.Color.White;
             this.button14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button14.Image = global::Rabbit_s_House.Properties.Resources._640x640_rect_794391401;
-            this.button14.Location = new System.Drawing.Point(142, 6);
+            this.button14.Location = new System.Drawing.Point(189, 7);
+            this.button14.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(130, 130);
+            this.button14.Size = new System.Drawing.Size(173, 150);
             this.button14.TabIndex = 1;
             this.button14.Text = "Bánh Hoa Quả";
             this.button14.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -326,9 +345,10 @@
             this.button17.BackColor = System.Drawing.Color.White;
             this.button17.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button17.Image = global::Rabbit_s_House.Properties.Resources.Ka2_17_1024x576;
-            this.button17.Location = new System.Drawing.Point(6, 278);
+            this.button17.Location = new System.Drawing.Point(8, 321);
+            this.button17.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(130, 130);
+            this.button17.Size = new System.Drawing.Size(173, 150);
             this.button17.TabIndex = 1;
             this.button17.Text = "Món của Hào";
             this.button17.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -339,9 +359,10 @@
             this.button15.BackColor = System.Drawing.Color.White;
             this.button15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button15.Image = global::Rabbit_s_House.Properties.Resources.Strawberry_Shortcake_Recipe;
-            this.button15.Location = new System.Drawing.Point(6, 142);
+            this.button15.Location = new System.Drawing.Point(8, 164);
+            this.button15.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(130, 130);
+            this.button15.Size = new System.Drawing.Size(173, 150);
             this.button15.TabIndex = 1;
             this.button15.Text = "Bánh dâu tây";
             this.button15.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -352,9 +373,10 @@
             this.button13.BackColor = System.Drawing.Color.White;
             this.button13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button13.Image = global::Rabbit_s_House.Properties.Resources.recipe1615_prepare_step3_6365200930536532282;
-            this.button13.Location = new System.Drawing.Point(6, 6);
+            this.button13.Location = new System.Drawing.Point(8, 7);
+            this.button13.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(130, 130);
+            this.button13.Size = new System.Drawing.Size(173, 150);
             this.button13.TabIndex = 1;
             this.button13.Text = "Bánh Tráng Trộn";
             this.button13.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -370,10 +392,11 @@
             this.Gia,
             this.Giamgia,
             this.Sdt});
-            this.dataGridView1.Location = new System.Drawing.Point(301, 82);
+            this.dataGridView1.Location = new System.Drawing.Point(401, 95);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(754, 548);
+            this.dataGridView1.Size = new System.Drawing.Size(1005, 632);
             this.dataGridView1.TabIndex = 4;
             // 
             // MaKH
@@ -393,24 +416,30 @@
             // TenMon
             // 
             this.TenMon.HeaderText = "Tên Món";
+            this.TenMon.MinimumWidth = 6;
             this.TenMon.Name = "TenMon";
             this.TenMon.Width = 175;
             // 
             // Gia
             // 
             this.Gia.HeaderText = "Giá Tiền";
+            this.Gia.MinimumWidth = 6;
             this.Gia.Name = "Gia";
+            this.Gia.Width = 125;
             // 
             // Giamgia
             // 
             this.Giamgia.HeaderText = "Giảm Giá";
+            this.Giamgia.MinimumWidth = 6;
             this.Giamgia.Name = "Giamgia";
             this.Giamgia.Width = 60;
             // 
             // Sdt
             // 
             this.Sdt.HeaderText = "Số Điện Thoại";
+            this.Sdt.MinimumWidth = 6;
             this.Sdt.Name = "Sdt";
+            this.Sdt.Width = 125;
             // 
             // toolStrip1
             // 
@@ -425,7 +454,7 @@
             this.tolSpPrint});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1346, 47);
+            this.toolStrip1.Size = new System.Drawing.Size(1682, 47);
             this.toolStrip1.TabIndex = 5;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -494,15 +523,16 @@
             // 
             // frmManager
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Rabbit_s_House.Properties.Resources.bg;
-            this.ClientSize = new System.Drawing.Size(1346, 651);
+            this.ClientSize = new System.Drawing.Size(1682, 751);
             this.ControlBox = false;
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "frmManager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Welcome";
