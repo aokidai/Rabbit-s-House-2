@@ -52,7 +52,37 @@
     <Compile Include="about.Designer.cs">
       <DependentUpon>about.cs</DependentUpon>
     </Compile>
+    <Compile Include="changepass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changepass.Designer.cs">
+      <DependentUpon>changepass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forgotpass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forgotpass.Designer.cs">
+      <DependentUpon>forgotpass.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model.cs" />
+    <Compile Include="model\chamcong.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="model\hoadon.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="model\khachhang.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="model\mon.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="model\NhanVien.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="model\Taikhoan.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="quanli.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,8 +110,17 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="serverlogin.cs" />
+    <Compile Include="model\table.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <EmbeddedResource Include="about.resx">
       <DependentUpon>about.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changepass.resx">
+      <DependentUpon>changepass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forgotpass.resx">
+      <DependentUpon>forgotpass.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>

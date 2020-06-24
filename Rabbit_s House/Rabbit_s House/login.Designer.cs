@@ -73,7 +73,6 @@
             this.txtTen.Size = new System.Drawing.Size(149, 20);
             this.txtTen.TabIndex = 8;
             this.txtTen.TextChanged += new System.EventHandler(this.txtTen_TextChanged);
-            this.txtTen.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTen_KeyPress);
             // 
             // label2
             // 

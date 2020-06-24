@@ -17,6 +17,30 @@ namespace Rabbit_s_House
         {
             InitializeComponent();
         }
+        public string maNV;
+        public void enableControl(int maLTK)
+        {
+            switch(maLTK)
+            {
+                case 1:
+                    newToolStripMenuItem.Enabled = true;
+                    openToolStripMenuItem.Enabled = true;
+                    break;
+                case 2:
+                    newToolStripMenuItem.Enabled = false;
+                    openToolStripMenuItem.Enabled = true;
+                    break;
+                case 3:
+                    newToolStripMenuItem.Enabled = false;
+                    openToolStripMenuItem.Enabled = true;
+                    break;
+                default:
+                    newToolStripMenuItem.Enabled = false;
+                    openToolStripMenuItem.Enabled = false;
+                    break;
+
+            }
+        }
         private void frmIndex_Load(object sender, EventArgs e)
         {
             
@@ -27,6 +51,7 @@ namespace Rabbit_s_House
           
             frmManager fM = new frmManager();
             fM.MdiParent = this;
+            fM.WindowState = FormWindowState.Maximized;
             fM.Show();
         }
 
@@ -50,7 +75,8 @@ namespace Rabbit_s_House
         {
             frmQuanLi fQ = new frmQuanLi();
             fQ.MdiParent = this;
-            this.Show();
+
+            fQ.Show();
         }
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
