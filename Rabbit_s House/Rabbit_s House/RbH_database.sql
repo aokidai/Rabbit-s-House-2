@@ -1,13 +1,13 @@
 ﻿create database Rabbit_s_House on primary
 (
 	name = 'Rabbit_s_House',
-	filename = N'C:\Program Files\Microsoft SQL Server\MSSQL15.MSSQLSERVER\MSSQL\DATA\QLSinhVien.mdf',
+	filename = N'C:\Program Files\Microsoft SQL Server\MSSQL15.MSSQLSERVER\MSSQL\DATA\Rabbit_s House.mdf',
 	size =30MB, filegrowth =10%, maxsize=200mb
 )
 log on
 (
 	name = 'Rabbit_s_House_Log',
-	filename = N'C:\Program Files\Microsoft SQL Server\MSSQL15.MSSQLSERVER\MSSQL\DATA\QLSinhVien_log.ldf',
+	filename = N'C:\Program Files\Microsoft SQL Server\MSSQL15.MSSQLSERVER\MSSQL\DATA\Rabbit_s House_log.ldf',
 	size =10mb, filegrowth = 2mb, maxsize=unlimited
 )
 go 
@@ -93,6 +93,6 @@ insert into LOAITK values(3,N'Nhân Viên Quản Lý Kho')
 
 
 --Insert table NHANVIEN
-insert into NHANVIEN values('NV0001', N'Nguyễn Văn Ca', 1 ,N'Bình Định','123456', 'vanca@gmail.com','admin','123',1)
-insert into NHANVIEN values('NV0002', N'Nguyễn Vĩnh Quang', 1 ,N'An Giang', '0913131788', 'phutphat@gmail.com','nvquang','123',2)
+insert into NHANVIEN values('NV0001', N'Aoki Daisuke', 1 ,N'Osaka','123456', 'aokidaisuke91@gmail.com','admin','123',1)
+insert into NHANVIEN values('NV0002', N'Trần Tiến Đạt', 1 ,N'An Giang', '0913131788', 'đâtt@gmail.com','nvdat','123',2)
 insert into NHANVIEN values('NV0003', N'Nguyễn Kim Ngân',0 ,N'Bình Dương', '098123733', 'vinhquang@gmail.com','nkngan','123',3)

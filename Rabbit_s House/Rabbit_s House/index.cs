@@ -85,5 +85,17 @@ namespace Rabbit_s_House
             //frmAbout fA = frmAbout();
             //fA.Show();
         }
+
+        private void logOutToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Application.Restart();
+        }
+
+        private void changePasswordToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmChangepass fCP = new frmChangepass();
+            fCP.Show();
+        }
     }
 }

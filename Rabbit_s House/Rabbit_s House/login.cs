@@ -67,5 +67,12 @@ namespace Rabbit_s_House
         {
 
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            frmForgotpass fGP = new frmForgotpass();
+            fGP.Show();
+            this.Hide();
+        }
     }
 }
