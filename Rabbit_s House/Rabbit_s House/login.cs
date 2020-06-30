@@ -17,6 +17,7 @@ namespace Rabbit_s_House
         {
             InitializeComponent();
         }
+        frmForgotpass fChP;
         private void frmLogin_Load(object sender, EventArgs e)
         {
             
@@ -70,9 +71,19 @@ namespace Rabbit_s_House
 
         private void label3_Click(object sender, EventArgs e)
         {
-            frmForgotpass fGP = new frmForgotpass();
-            fGP.Show();
-            this.Hide();
+            if (fChP == null)
+            {
+                fChP = new frmForgotpass();
+                //fChP.MdiParent = this;
+                fChP.Show();
+                this.Hide();
+            }
+            else
+            {
+                fChP.Activate();
+                fChP.Show();
+                this.Hide();
+            }
         }
     }
 }

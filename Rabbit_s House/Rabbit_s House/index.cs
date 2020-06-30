@@ -18,6 +18,7 @@ namespace Rabbit_s_House
             InitializeComponent();
         }
         public string maNV;
+        frmChangepass fChP;
         public void enableControl(int maLTK)
         {
             switch(maLTK)
@@ -51,13 +52,13 @@ namespace Rabbit_s_House
           
             frmManager fM = new frmManager();
             fM.MdiParent = this;
-            fM.WindowState = FormWindowState.Maximized;
+            //fM.WindowState = FormWindowState.Maximized;
             fM.Show();
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
@@ -94,8 +95,17 @@ namespace Rabbit_s_House
 
         private void changePasswordToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmChangepass fCP = new frmChangepass();
-            fCP.Show();
+            if(fChP == null)
+            {
+                fChP = new frmChangepass();
+                fChP.MdiParent = this;
+                fChP.Show();
+            }
+            else
+            {
+                fChP.Activate();
+                fChP.Show();
+            }
         }
     }
 }

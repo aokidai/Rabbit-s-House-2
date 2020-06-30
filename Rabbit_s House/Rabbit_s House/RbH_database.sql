@@ -31,6 +31,7 @@ create table Mon
 create table hoadon
 (
 	MaKH char(4) references KhachHang(MaKH),
+	MaKH varchar(10) references NhanVien(MaNV),
 	MaMon varchar(5) references Mon(MaMon),
 	primary key(MaKH,MaMon)
 )

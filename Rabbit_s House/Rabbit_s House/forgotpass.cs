@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Data.SqlClient;
 namespace Rabbit_s_House
 {
     public partial class frmForgotpass : Form
@@ -51,42 +51,20 @@ namespace Rabbit_s_House
         {
             errorProvider1.SetError(txtTenDN, "");
             errorProvider1.SetError(txtKey, "");
-            errorProvider1.SetError(txtMatkhau, "");
-            errorProvider1.SetError(txtNhapLaiMK, "");
-            if (txtMatkhau.Text.Length < 8 || !txtMatkhau.Text.Any(char.IsUpper))
-            {
-                errorProvider1.SetError(txtMatkhau, "Mat khau toi thieu 8 ki tu" + "in hoa, in thuong.");
-                return;
-            }
-            if (txtMatkhau.Text != txtNhapLaiMK.Text)
-            {
-                errorProvider1.SetError(txtNhapLaiMK, "Mật khẩu không trùng!");
-                return;
-            }
             tblNhanVien = new NhanVien();
             frmIndex fI = (frmIndex)this.MdiParent;
-
             var r = tblNhanVien.Select("Username='" + txtTenDN.Text + "' and MaNV ='" + txtKey.Text + "'");
             if (r.Count() > 0)
             {
-
-                fI.maNV = r[0]["MaNV"].ToString();
-                fI.enableControl((int)r[0]["MaLTK"]);
-                fI.Show();
-                this.Hide();
+                frmChangepass fC = new frmChangepass();
+                fC.Show();
+                this.Close();
             }
             else
             {
                 MessageBox.Show("Sai tên đăng nhập hoặc Key!");
+                return;
             }
-
-            int count = table.Thuc_hien_lenh("Update NHANVIEN set Password ='" + txtMatkhau.Text + "where MaNV = '" + fI.maNV + "'");
-            if (count > 0)
-            {
-                MessageBox.Show("Cap nhat thanh cong!.");
-            }
-            else
-                MessageBox.Show("Mat khau khong hop le");
         }
     private void btnHuy_Click(object sender, EventArgs e)
         {

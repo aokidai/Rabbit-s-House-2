@@ -583,7 +583,6 @@
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "frmManager";
             this.Text = "Welcome";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmManager_Load);
             tabPage1.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
