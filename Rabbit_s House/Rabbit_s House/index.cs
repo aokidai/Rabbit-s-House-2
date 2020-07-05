@@ -107,5 +107,12 @@ namespace Rabbit_s_House
                 fChP.Show();
             }
         }
+
+        private void staffToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmStaffs fSp = new frmStaffs();
+            fSp.MdiParent = this;
+            fSp.Show();
+        }
     }
 }

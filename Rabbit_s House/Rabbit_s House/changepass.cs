@@ -43,7 +43,7 @@ namespace Rabbit_s_House
                 return;
             }
             frmIndex fI = (frmIndex)this.MdiParent;
-            int count = table.Thuc_hien_lenh("update NHANVIEN set Password ='" + txtMKCu.Text + "where MaNV = '" + fI.maNV + "'");
+            int count = table.Thuc_hien_lenh("update NHANVIEN set Password ='" + txtMKCu.Text + "' where MaNV = '" + fI.maNV + "'");
             if (count > 0)
             {
                 MessageBox.Show("Cap nhat thanh cong!.");

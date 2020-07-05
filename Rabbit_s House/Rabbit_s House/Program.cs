@@ -17,7 +17,7 @@ namespace Rabbit_s_House
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmLogin());
-            Application.Run(new frmIndex());
+           // Application.Run(new frmIndex());
             Rabbit_s_House.Program.Main();
             //Application.Run(new frmLogin());
             //Application.Run(new frmIndex());

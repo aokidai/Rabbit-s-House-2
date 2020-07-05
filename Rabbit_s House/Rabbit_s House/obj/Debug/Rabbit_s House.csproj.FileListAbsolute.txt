@@ -77,3 +77,20 @@ C:\Users\toyam\Downloads\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debu
 C:\Users\toyam\Downloads\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s House.csprojAssemblyReference.cache
 C:\Users\toyam\Downloads\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.frmChangepass.resources
 C:\Users\toyam\Downloads\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.frmForgotpass.resources
+C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\bin\Debug\Rabbit's House.exe.config
+C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\bin\Debug\Rabbit's House.exe
+C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\bin\Debug\Rabbit's House.pdb
+C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.about.resources
+C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.frmChangepass.resources
+C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.frmForgotpass.resources
+C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.frmLogin.resources
+C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.frmIndex.resources
+C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.frmManager.resources
+C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.Properties.Resources.resources
+C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.frmQuanLi.resources
+C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.frmStaffs.resources
+C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s House.csproj.GenerateResource.cache
+C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s House.csproj.CoreCompileInputs.cache
+C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit's House.exe
+C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit's House.pdb
+C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s House.csprojAssemblyReference.cache

@@ -90,11 +90,11 @@
             tabPage1.AutoScroll = true;
             tabPage1.Controls.Add(this.flowLayoutPanel1);
             tabPage1.ImeMode = System.Windows.Forms.ImeMode.On;
-            tabPage1.Location = new System.Drawing.Point(4, 25);
-            tabPage1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            tabPage1.Location = new System.Drawing.Point(4, 22);
+            tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            tabPage1.Size = new System.Drawing.Size(376, 634);
+            tabPage1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            tabPage1.Size = new System.Drawing.Size(280, 504);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Cafe";
             tabPage1.UseVisualStyleBackColor = true;
@@ -103,20 +103,20 @@
             // 
             this.flowLayoutPanel1.Controls.Add(this.listView1);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(4, 3);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 2);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(368, 628);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(274, 500);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // listView1
             // 
             this.listView1.HideSelection = false;
             this.listView1.LargeImageList = this.imageList1;
-            this.listView1.Location = new System.Drawing.Point(4, 3);
-            this.listView1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.listView1.Location = new System.Drawing.Point(3, 2);
+            this.listView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(356, 460);
+            this.listView1.Size = new System.Drawing.Size(268, 369);
             this.listView1.SmallImageList = this.imageList1;
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
@@ -159,22 +159,22 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Location = new System.Drawing.Point(16, 68);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tabControl1.Location = new System.Drawing.Point(12, 54);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(384, 663);
+            this.tabControl1.Size = new System.Drawing.Size(288, 530);
             this.tabControl1.TabIndex = 3;
             // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.listView2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tabPage2.Size = new System.Drawing.Size(376, 634);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage2.Size = new System.Drawing.Size(280, 504);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Nước Ngọt";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -183,19 +183,19 @@
             // 
             this.listView2.HideSelection = false;
             this.listView2.Location = new System.Drawing.Point(0, 0);
-            this.listView2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.listView2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(371, 515);
+            this.listView2.Size = new System.Drawing.Size(279, 413);
             this.listView2.TabIndex = 0;
             this.listView2.UseCompatibleStateImageBehavior = false;
             // 
             // tabPage3
             // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tabPage3.Size = new System.Drawing.Size(376, 634);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage3.Size = new System.Drawing.Size(280, 504);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Đồ ăn vặt";
             // 
@@ -207,11 +207,11 @@
             this.tabPage4.Controls.Add(this.button21);
             this.tabPage4.Controls.Add(this.button23);
             this.tabPage4.Controls.Add(this.button19);
-            this.tabPage4.Location = new System.Drawing.Point(4, 25);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tabPage4.Size = new System.Drawing.Size(376, 634);
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage4.Size = new System.Drawing.Size(280, 504);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Đồ uống";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -221,10 +221,10 @@
             this.button22.BackColor = System.Drawing.Color.White;
             this.button22.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button22.Image = global::Rabbit_s_House.Properties.Resources._2cf3de1421350014af841348e8a1b0fb;
-            this.button22.Location = new System.Drawing.Point(192, 7);
-            this.button22.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.button22.Location = new System.Drawing.Point(144, 6);
+            this.button22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(173, 150);
+            this.button22.Size = new System.Drawing.Size(130, 120);
             this.button22.TabIndex = 2;
             this.button22.Text = "Sinh Tố Dâu";
             this.button22.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -235,10 +235,10 @@
             this.button24.BackColor = System.Drawing.Color.White;
             this.button24.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button24.Image = global::Rabbit_s_House.Properties.Resources.cach_lam_sinh_to_bo_ngon_khong_bi_dang_cuc_don_gian_4_1587467278_979_width512height512;
-            this.button24.Location = new System.Drawing.Point(192, 321);
-            this.button24.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.button24.Location = new System.Drawing.Point(144, 257);
+            this.button24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(173, 150);
+            this.button24.Size = new System.Drawing.Size(130, 120);
             this.button24.TabIndex = 2;
             this.button24.Text = "SInh Tố Bơ";
             this.button24.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -249,10 +249,10 @@
             this.button20.BackColor = System.Drawing.Color.White;
             this.button20.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button20.Image = global::Rabbit_s_House.Properties.Resources.yamamoto_mattcha_cafe;
-            this.button20.Location = new System.Drawing.Point(192, 164);
-            this.button20.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.button20.Location = new System.Drawing.Point(144, 131);
+            this.button20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(173, 150);
+            this.button20.Size = new System.Drawing.Size(130, 120);
             this.button20.TabIndex = 2;
             this.button20.Text = "Mattcha";
             this.button20.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -263,10 +263,10 @@
             this.button21.BackColor = System.Drawing.Color.White;
             this.button21.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button21.Image = global::Rabbit_s_House.Properties.Resources._1566702464_5_thumbnail;
-            this.button21.Location = new System.Drawing.Point(8, 7);
-            this.button21.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.button21.Location = new System.Drawing.Point(6, 6);
+            this.button21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(173, 150);
+            this.button21.Size = new System.Drawing.Size(130, 120);
             this.button21.TabIndex = 2;
             this.button21.Text = "Nước Mía";
             this.button21.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -277,10 +277,10 @@
             this.button23.BackColor = System.Drawing.Color.White;
             this.button23.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button23.Image = global::Rabbit_s_House.Properties.Resources.recipe9014_prepare_step3_635615012214478617;
-            this.button23.Location = new System.Drawing.Point(8, 321);
-            this.button23.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.button23.Location = new System.Drawing.Point(6, 257);
+            this.button23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(173, 150);
+            this.button23.Size = new System.Drawing.Size(130, 120);
             this.button23.TabIndex = 2;
             this.button23.Text = "Sinh Tố Xoài";
             this.button23.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -291,10 +291,10 @@
             this.button19.BackColor = System.Drawing.Color.White;
             this.button19.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button19.Image = global::Rabbit_s_House.Properties.Resources.green_sbov;
-            this.button19.Location = new System.Drawing.Point(8, 164);
-            this.button19.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.button19.Location = new System.Drawing.Point(6, 131);
+            this.button19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(173, 150);
+            this.button19.Size = new System.Drawing.Size(130, 120);
             this.button19.TabIndex = 2;
             this.button19.Text = "Trà Xanh";
             this.button19.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -312,11 +312,11 @@
             this.Gia,
             this.Giamgia,
             this.NgayBan});
-            this.dgvHoaDon.Location = new System.Drawing.Point(408, 91);
-            this.dgvHoaDon.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.dgvHoaDon.Location = new System.Drawing.Point(306, 73);
+            this.dgvHoaDon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvHoaDon.Name = "dgvHoaDon";
             this.dgvHoaDon.RowHeadersWidth = 51;
-            this.dgvHoaDon.Size = new System.Drawing.Size(1005, 632);
+            this.dgvHoaDon.Size = new System.Drawing.Size(754, 506);
             this.dgvHoaDon.TabIndex = 4;
             // 
             // TenKH
@@ -380,7 +380,7 @@
             this.tolSpPrint});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1813, 47);
+            this.toolStrip1.Size = new System.Drawing.Size(1350, 47);
             this.toolStrip1.TabIndex = 5;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -446,10 +446,10 @@
             // txtError
             // 
             this.txtError.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtError.Location = new System.Drawing.Point(23, 735);
-            this.txtError.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtError.Location = new System.Drawing.Point(17, 588);
+            this.txtError.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtError.Name = "txtError";
-            this.txtError.Size = new System.Drawing.Size(1775, 15);
+            this.txtError.Size = new System.Drawing.Size(1331, 12);
             this.txtError.TabIndex = 6;
             // 
             // gKhachHang
@@ -463,11 +463,11 @@
             this.gKhachHang.Controls.Add(this.label2);
             this.gKhachHang.Controls.Add(this.txtMaKH);
             this.gKhachHang.Controls.Add(this.label1);
-            this.gKhachHang.Location = new System.Drawing.Point(1449, 93);
-            this.gKhachHang.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.gKhachHang.Location = new System.Drawing.Point(1087, 74);
+            this.gKhachHang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gKhachHang.Name = "gKhachHang";
-            this.gKhachHang.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.gKhachHang.Size = new System.Drawing.Size(344, 633);
+            this.gKhachHang.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gKhachHang.Size = new System.Drawing.Size(258, 506);
             this.gKhachHang.TabIndex = 7;
             this.gKhachHang.TabStop = false;
             this.gKhachHang.Text = "Khách Hàng";
@@ -475,27 +475,26 @@
             // cmbGiamGia
             // 
             this.cmbGiamGia.FormattingEnabled = true;
-            this.cmbGiamGia.Location = new System.Drawing.Point(84, 166);
-            this.cmbGiamGia.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.cmbGiamGia.Location = new System.Drawing.Point(63, 133);
+            this.cmbGiamGia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbGiamGia.Name = "cmbGiamGia";
-            this.cmbGiamGia.Size = new System.Drawing.Size(227, 23);
+            this.cmbGiamGia.Size = new System.Drawing.Size(171, 20);
             this.cmbGiamGia.TabIndex = 2;
             // 
             // txtSDT
             // 
-            this.txtSDT.Location = new System.Drawing.Point(84, 122);
-            this.txtSDT.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtSDT.Location = new System.Drawing.Point(63, 98);
+            this.txtSDT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSDT.Name = "txtSDT";
-            this.txtSDT.Size = new System.Drawing.Size(243, 22);
+            this.txtSDT.Size = new System.Drawing.Size(183, 19);
             this.txtSDT.TabIndex = 1;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(15, 168);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(11, 134);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 15);
+            this.label4.Size = new System.Drawing.Size(49, 12);
             this.label4.TabIndex = 0;
             this.label4.Text = "Giảm giá";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -503,56 +502,53 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 129);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(9, 103);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 15);
+            this.label3.Size = new System.Drawing.Size(36, 12);
             this.label3.TabIndex = 0;
             this.label3.Text = "Số ĐT";
             // 
             // txtHoTen
             // 
-            this.txtHoTen.Location = new System.Drawing.Point(84, 78);
-            this.txtHoTen.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtHoTen.Location = new System.Drawing.Point(63, 62);
+            this.txtHoTen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtHoTen.Name = "txtHoTen";
-            this.txtHoTen.Size = new System.Drawing.Size(243, 22);
+            this.txtHoTen.Size = new System.Drawing.Size(183, 19);
             this.txtHoTen.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 85);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(9, 68);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 15);
+            this.label2.Size = new System.Drawing.Size(38, 12);
             this.label2.TabIndex = 0;
             this.label2.Text = "Họ tên";
             // 
             // txtMaKH
             // 
-            this.txtMaKH.Location = new System.Drawing.Point(84, 36);
-            this.txtMaKH.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtMaKH.Location = new System.Drawing.Point(63, 29);
+            this.txtMaKH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMaKH.Name = "txtMaKH";
-            this.txtMaKH.Size = new System.Drawing.Size(243, 22);
+            this.txtMaKH.Size = new System.Drawing.Size(183, 19);
             this.txtMaKH.TabIndex = 1;
             this.txtMaKH.TextChanged += new System.EventHandler(this.txtMaKH_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 43);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(9, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 15);
+            this.label1.Size = new System.Drawing.Size(39, 12);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã KH";
             // 
             // txtTimKiem
             // 
-            this.txtTimKiem.Location = new System.Drawing.Point(1533, 15);
-            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtTimKiem.Location = new System.Drawing.Point(1150, 12);
+            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(213, 22);
+            this.txtTimKiem.Size = new System.Drawing.Size(161, 19);
             this.txtTimKiem.TabIndex = 8;
             this.txtTimKiem.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTimKiem_KeyPress);
             // 
@@ -568,10 +564,10 @@
             // 
             // frmManager
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Rabbit_s_House.Properties.Resources.bg;
-            this.ClientSize = new System.Drawing.Size(1813, 763);
+            this.ClientSize = new System.Drawing.Size(1350, 649);
             this.ControlBox = false;
             this.Controls.Add(this.txtTimKiem);
             this.Controls.Add(this.gKhachHang);
@@ -580,8 +576,9 @@
             this.Controls.Add(this.dgvHoaDon);
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmManager";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Welcome";
             this.Load += new System.EventHandler(this.frmManager_Load);
             tabPage1.ResumeLayout(false);

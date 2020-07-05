@@ -24,20 +24,8 @@ namespace Rabbit_s_House
                 txtKey.Focus();
             }
         }
-        private void txtKey_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == 13)
-            {
-                txtMatkhau.Focus();
-            }
-        }
-        private void txtMatkhau_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == 13)
-            {
-                txtNhapLaiMK.Focus();
-            }
-        }
+      
+     
         private void txtNhapLaiMK_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == 13)
