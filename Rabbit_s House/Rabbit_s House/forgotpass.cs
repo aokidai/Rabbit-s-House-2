@@ -44,7 +44,7 @@ namespace Rabbit_s_House
             var r = tblNhanVien.Select("Username='" + txtTenDN.Text + "' and MaNV ='" + txtKey.Text + "'");
             if (r.Count() > 0)
             {
-                frmChangepass fC = new frmChangepass();
+                frmChangepass fC = new frmChangepass(txtKey.Text);
                 fC.Show();
                 this.Close();
             }

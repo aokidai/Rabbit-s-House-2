@@ -21,7 +21,8 @@ namespace Rabbit_s_House
         frmChangepass fChP;
         public void enableControl(int maLTK)
         {
-            switch(maLTK)
+            //editToolStripMenuItem.Enabled = false;
+            switch (maLTK)
             {
                 case 1:
                     newToolStripMenuItem.Enabled = true;
@@ -39,8 +40,8 @@ namespace Rabbit_s_House
                     newToolStripMenuItem.Enabled = false;
                     openToolStripMenuItem.Enabled = false;
                     break;
-
             }
+            
         }
         private void frmIndex_Load(object sender, EventArgs e)
         {
@@ -76,7 +77,6 @@ namespace Rabbit_s_House
         {
             frmQuanLi fQ = new frmQuanLi();
             fQ.MdiParent = this;
-
             fQ.Show();
         }
 
@@ -113,6 +113,13 @@ namespace Rabbit_s_House
             frmStaffs fSp = new frmStaffs();
             fSp.MdiParent = this;
             fSp.Show();
+        }
+
+        private void foodToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmThemSP fFd = new frmThemSP();
+            fFd.MdiParent = this;
+            fFd.Show();
         }
     }
 }

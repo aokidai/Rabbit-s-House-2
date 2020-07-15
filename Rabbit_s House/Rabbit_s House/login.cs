@@ -25,16 +25,24 @@ namespace Rabbit_s_House
         NhanVien tblNhanVien;
         public void btnDangnhap_Click(object sender, EventArgs e)
         {
+            frmIndex fI = new frmIndex();
             tblNhanVien = new NhanVien();
             var r = tblNhanVien.Select("Username='"+txtTen.Text+"' and Password ='"+txtMatkhau.Text+"'");
             if(r.Count()>0)
             {
-                frmIndex fI = new frmIndex();
-                fI.Text = "Rabbit's House - Welcome " + r[0]["TenNV"].ToString();
-                fI.maNV = r[0]["MaNV"].ToString();
-                fI.enableControl((int)r[0]["MaLTK"]);
-                fI.Show();
-                this.Hide();
+                if(txtMatkhau.Text=="123")
+                {
+                    MessageBox.Show("Hẫy đổi lại mật khẩu tại trang chủ chọn [Account]->[Change Pass]!");
+                }
+                else
+                {
+                    
+                    fI.Text = "Rabbit's House - Welcome " + r[0]["TenNV"].ToString();
+                    fI.maNV = r[0]["MaNV"].ToString();
+                    fI.enableControl((int)r[0]["MaLTK"]);
+                    fI.Show();
+                    this.Hide();
+                } 
             }
             else
             {

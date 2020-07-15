@@ -17,9 +17,6 @@ namespace Rabbit_s_House
             InitializeComponent();
         }
 
-        private void tabPage2_Click(object sender, EventArgs e)
-        {
 
-        }
     }
 }

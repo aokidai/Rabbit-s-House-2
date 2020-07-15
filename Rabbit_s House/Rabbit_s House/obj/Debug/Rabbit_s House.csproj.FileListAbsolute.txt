@@ -94,3 +94,4 @@ C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbi
 C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit's House.exe
 C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit's House.pdb
 C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s House.csprojAssemblyReference.cache
+C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.frmThemSP.resources

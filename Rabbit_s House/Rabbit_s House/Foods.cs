@@ -1,48 +1,45 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO;
+using System.Data.SqlClient;
 
 namespace Rabbit_s_House
 {
-    public partial class frmStaffs : Form
+    public partial class frmThemSP : Form
     {
-        public frmStaffs()
+        public frmThemSP()
         {
             InitializeComponent();
         }
-        DataTable tblNhanVien;
-        SqlDataAdapter daNhanVien;
-        BindingManagerBase DSNV;
+        DataTable tblMon;
+        SqlDataAdapter daMon;
+        BindingManagerBase DSMon;
         bool capNhat = false;
-        private void frmStaffs_Load(object sender, EventArgs e)
+
+        private void frmThemSP_Load(object sender, EventArgs e)
         {
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            tblNhanVien = new DataTable();
-            daNhanVien = new SqlDataAdapter("Select * from NHANVIEN", Model.cnnStr);
+            tblMon = new DataTable();
+            daMon = new SqlDataAdapter("Select * from Mon", Model.cnnStr);
             try
             {
-                daNhanVien.Fill(tblNhanVien);
+                daMon.Fill(tblMon);
             }
-            catch(SqlException ex)
+            catch (SqlException ex)
             {
                 MessageBox.Show(ex.ToString());
             }
-            var cmb = new SqlCommandBuilder(daNhanVien);
-            loadDGVNhanVien();
-
-            txtMaNV.DataBindings.Add("text", tblNhanVien, "MaNV", true);
-            txtHoTen.DataBindings.Add("text", tblNhanVien, "TenNV", true);
-            txtDiaChi.DataBindings.Add("text", tblNhanVien, "DiaChi", true);
-            txtSoDT.DataBindings.Add("text", tblNhanVien, "SoDT", true);
-            txtEmail.DataBindings.Add("text", tblNhanVien, "Email", true);
-            txtUserName.DataBindings.Add("text", tblNhanVien, "UserName", true);
-            txtPass.DataBindings.Add("text", tblNhanVien, "Password", true);
-            txtMaLTK.DataBindings.Add("text", tblNhanVien, "MaLTK", true);
-            
-            radNam.DataBindings.Add("Checked", tblNhanVien, "GioiTinh", true);
-            DSNV = this.BindingContext[tblNhanVien];
+            var cmb = new SqlCommandBuilder(daMon);
+            txtMaMon.DataBindings.Add("text", tblMon, "MaMon", true);
+            txtTenMon.DataBindings.Add("text", tblMon, "TenMon", true);
+            txtGia.DataBindings.Add("text", tblMon, "Gia", true);
+            DSMon = this.BindingContext[tblMon];
             enableButton();
         }
         private void enableButton()
@@ -56,18 +53,16 @@ namespace Rabbit_s_House
             tolSpSave.Enabled = capNhat;
             tolSpCannel.Enabled = capNhat;
         }
-        private void loadDGVNhanVien()
+
+
+        private void btnThemAnh_Click(object sender, EventArgs e)
         {
-            dgvNhanVien.AutoGenerateColumns = false;
-            dgvNhanVien.DataSource = tblNhanVien;
+
         }
-        private void radNam_CheckedChanged(object sender, EventArgs e)
-        {
-            radNu.Checked = !radNam.Checked;
-        }
+
         private void tolSpInsert_Click(object sender, EventArgs e)
         {
-            DSNV.AddNew();
+            DSMon.AddNew();
             capNhat = true;
             enableButton();
         }
@@ -76,23 +71,23 @@ namespace Rabbit_s_House
         {
             try
             {
-                DSNV.EndCurrentEdit();
-                daNhanVien.Update(tblNhanVien);
-                tblNhanVien.AcceptChanges();
+                DSMon.EndCurrentEdit();
+                daMon.Update(tblMon);
+                tblMon.AcceptChanges();
                 capNhat = false;
                 enableButton();
             }
             catch (Exception ex)
             {
-                tblNhanVien.RejectChanges();
+                tblMon.RejectChanges();
                 MessageBox.Show(ex.Message);
             }
         }
 
         private void tolSpCannel_Click(object sender, EventArgs e)
         {
-            DSNV.CancelCurrentEdit();
-            tblNhanVien.RejectChanges();
+            DSMon.CancelCurrentEdit();
+            tblMon.RejectChanges();
             capNhat = false;
             enableButton();
         }
@@ -101,13 +96,13 @@ namespace Rabbit_s_House
         {
             try
             {
-                DSNV.RemoveAt(DSNV.Position);
-                daNhanVien.Update(tblNhanVien);
-                tblNhanVien.AcceptChanges();
+                DSMon.RemoveAt(DSMon.Position);
+                daMon.Update(tblMon);
+                tblMon.AcceptChanges();
             }
             catch (SqlException ex)
             {
-                tblNhanVien.RejectChanges();
+                tblMon.RejectChanges();
                 MessageBox.Show("Xóa thất bại!!!");
             }
         }
@@ -122,13 +117,18 @@ namespace Rabbit_s_House
         {
             try
             {
-                DataRow r = tblNhanVien.Select("MaNV ='" + txtTimKiem.Text + "'")[0];
-                DSNV.Position = tblNhanVien.Rows.IndexOf(r);
+                DataRow r = tblMon.Select("MaNV ='" + txtTimKiem.Text + "'")[0];
+                DSMon.Position = tblMon.Rows.IndexOf(r);
             }
             catch
             {
                 MessageBox.Show("Không Tìm Thấy!!!");
             }
+        }
+
+        private void txtTimKiem_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void txtTimKiem_MouseDown(object sender, MouseEventArgs e)
@@ -142,14 +142,12 @@ namespace Rabbit_s_House
                 btnTimKiem_Click(sender, e);
         }
 
-        private void dgvNhanVien_SelectionChanged(object sender, EventArgs e)
+        private void dgvMon_SelectionChanged(object sender, EventArgs e)
         {
             if (capNhat)
             {
                 tolSpCannel_Click(sender, e);
             }
         }
-
-        
     }
 }

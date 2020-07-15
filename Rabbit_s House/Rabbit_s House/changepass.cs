@@ -14,9 +14,16 @@ namespace Rabbit_s_House
 {
     public partial class frmChangepass : Form
     {
+        string maNV = null;
         public frmChangepass()
         {
             InitializeComponent();
+        }
+      
+        public frmChangepass(string pMaNV)
+        {
+            InitializeComponent();
+            maNV = pMaNV;
         }
 
         private void frmChangepass_Load(object sender, EventArgs e)
@@ -42,18 +49,36 @@ namespace Rabbit_s_House
                 errorProvider1.SetError(txtNhapLaiMK, "Mat khau khong trung!");
                 return;
             }
-            frmIndex fI = (frmIndex)this.MdiParent;
-            int count = table.Thuc_hien_lenh("update NHANVIEN set Password ='" + txtMKCu.Text + "' where MaNV = '" + fI.maNV + "'");
-            if (count > 0)
+            if (maNV != null)
             {
-                MessageBox.Show("Cap nhat thanh cong!.");
-                Application.Restart();
+                int count = table.Thuc_hien_lenh("update NHANVIEN set Password ='" + txtMKCu.Text + "'where MaNV = '" + maNV + "'");
+                if (count > 0)
+                {
+                    MessageBox.Show("Cap nhat thanh cong!.");
+                    Application.Restart();
+                }
+                else
+                {
+                    MessageBox.Show("Mat khau khong hop le");
+                    return;
+                }
             }
             else
             {
-                MessageBox.Show("Mat khau khong hop le");
-                return;
+                frmIndex fI = (frmIndex)this.MdiParent;
+                int count = table.Thuc_hien_lenh("update NHANVIEN set Password ='" + txtMKCu.Text + "'where MaNV = '" + fI.maNV + "'");
+                if (count > 0)
+                {
+                    MessageBox.Show("Cap nhat thanh cong!.");
+                    Application.Restart();
+                }
+                else
+                {
+                    MessageBox.Show("Mat khau khong hop le");
+                    return;
+                }
             }
+            
         }
         private void txtMKCu_KeyPress(object sender, KeyPressEventArgs e)
         {
