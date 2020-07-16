@@ -80,7 +80,6 @@ C:\Users\toyam\Downloads\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debu
 C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\bin\Debug\Rabbit's House.exe.config
 C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\bin\Debug\Rabbit's House.exe
 C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\bin\Debug\Rabbit's House.pdb
-C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.about.resources
 C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.frmChangepass.resources
 C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.frmForgotpass.resources
 C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.frmLogin.resources

@@ -41,12 +41,12 @@
             this.pHinh = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.txtGia = new System.Windows.Forms.TextBox();
             this.txtTenMon = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtMaMon = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.txtGia = new System.Windows.Forms.TextBox();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.dgvMon = new System.Windows.Forms.DataGridView();
@@ -54,6 +54,8 @@
             this.MaMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label4 = new System.Windows.Forms.Label();
+            this.cboLoai = new System.Windows.Forms.ComboBox();
             this.toolStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pHinh)).BeginInit();
@@ -72,7 +74,7 @@
             this.tolSpPrint});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1800, 47);
+            this.toolStrip1.Size = new System.Drawing.Size(1350, 47);
             this.toolStrip1.TabIndex = 6;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -138,6 +140,8 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.cboLoai);
+            this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.btnThemAnh);
             this.groupBox1.Controls.Add(this.pHinh);
             this.groupBox1.Controls.Add(this.label1);
@@ -147,9 +151,11 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.txtMaMon);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(21, 62);
+            this.groupBox1.Location = new System.Drawing.Point(16, 50);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(523, 725);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(392, 580);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin món";
@@ -157,9 +163,10 @@
             // btnThemAnh
             // 
             this.btnThemAnh.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnThemAnh.Location = new System.Drawing.Point(174, 437);
+            this.btnThemAnh.Location = new System.Drawing.Point(130, 398);
+            this.btnThemAnh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnThemAnh.Name = "btnThemAnh";
-            this.btnThemAnh.Size = new System.Drawing.Size(128, 47);
+            this.btnThemAnh.Size = new System.Drawing.Size(96, 38);
             this.btnThemAnh.TabIndex = 21;
             this.btnThemAnh.Text = "Thêm ảnh";
             this.btnThemAnh.UseVisualStyleBackColor = true;
@@ -167,9 +174,10 @@
             // 
             // pHinh
             // 
-            this.pHinh.Location = new System.Drawing.Point(142, 238);
+            this.pHinh.Location = new System.Drawing.Point(106, 238);
+            this.pHinh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pHinh.Name = "pHinh";
-            this.pHinh.Size = new System.Drawing.Size(193, 181);
+            this.pHinh.Size = new System.Drawing.Size(145, 145);
             this.pHinh.TabIndex = 20;
             this.pHinh.TabStop = false;
             // 
@@ -177,10 +185,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(22, 259);
-            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label1.Location = new System.Drawing.Point(16, 255);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 15);
+            this.label1.Size = new System.Drawing.Size(53, 12);
             this.label1.TabIndex = 18;
             this.label1.Text = "Hình Anh";
             // 
@@ -188,46 +196,56 @@
             // 
             this.label7.AutoSize = true;
             this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(22, 192);
-            this.label7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label7.Location = new System.Drawing.Point(16, 154);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(27, 15);
+            this.label7.Size = new System.Drawing.Size(22, 12);
             this.label7.TabIndex = 18;
             this.label7.Text = "Giá";
             // 
+            // txtGia
+            // 
+            this.txtGia.Location = new System.Drawing.Point(106, 151);
+            this.txtGia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtGia.Name = "txtGia";
+            this.txtGia.Size = new System.Drawing.Size(258, 19);
+            this.txtGia.TabIndex = 17;
+            // 
             // txtTenMon
             // 
-            this.txtTenMon.Location = new System.Drawing.Point(141, 136);
-            this.txtTenMon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtTenMon.Location = new System.Drawing.Point(106, 109);
+            this.txtTenMon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTenMon.Name = "txtTenMon";
-            this.txtTenMon.Size = new System.Drawing.Size(342, 22);
+            this.txtTenMon.Size = new System.Drawing.Size(258, 19);
             this.txtTenMon.TabIndex = 17;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(23, 142);
+            this.label3.Location = new System.Drawing.Point(17, 114);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 15);
+            this.label3.Size = new System.Drawing.Size(49, 12);
             this.label3.TabIndex = 16;
             this.label3.Text = "Tên Món";
             // 
             // txtMaMon
             // 
-            this.txtMaMon.Location = new System.Drawing.Point(142, 89);
-            this.txtMaMon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtMaMon.Location = new System.Drawing.Point(106, 71);
+            this.txtMaMon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMaMon.Name = "txtMaMon";
-            this.txtMaMon.Size = new System.Drawing.Size(341, 22);
+            this.txtMaMon.Size = new System.Drawing.Size(257, 19);
             this.txtMaMon.TabIndex = 15;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(23, 93);
+            this.label2.Location = new System.Drawing.Point(17, 74);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 15);
+            this.label2.Size = new System.Drawing.Size(45, 12);
             this.label2.TabIndex = 14;
             this.label2.Text = "Mã Món";
             // 
@@ -235,22 +253,14 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // txtGia
-            // 
-            this.txtGia.Location = new System.Drawing.Point(141, 189);
-            this.txtGia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtGia.Name = "txtGia";
-            this.txtGia.Size = new System.Drawing.Size(342, 22);
-            this.txtGia.TabIndex = 17;
-            // 
             // btnTimKiem
             // 
             this.btnTimKiem.BackColor = System.Drawing.Color.Transparent;
             this.btnTimKiem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnTimKiem.Location = new System.Drawing.Point(1706, 11);
-            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.btnTimKiem.Location = new System.Drawing.Point(1280, 9);
+            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(81, 22);
+            this.btnTimKiem.Size = new System.Drawing.Size(61, 18);
             this.btnTimKiem.TabIndex = 13;
             this.btnTimKiem.Text = "Tìm Kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = false;
@@ -258,10 +268,10 @@
             // 
             // txtTimKiem
             // 
-            this.txtTimKiem.Location = new System.Drawing.Point(1402, 11);
-            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.txtTimKiem.Location = new System.Drawing.Point(1052, 9);
+            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(288, 22);
+            this.txtTimKiem.Size = new System.Drawing.Size(217, 19);
             this.txtTimKiem.TabIndex = 12;
             this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
             this.txtTimKiem.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTimKiem_KeyPress);
@@ -276,11 +286,12 @@
             this.MaMon,
             this.TenMon,
             this.Gia});
-            this.dgvMon.Location = new System.Drawing.Point(577, 70);
+            this.dgvMon.Location = new System.Drawing.Point(433, 56);
+            this.dgvMon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvMon.Name = "dgvMon";
             this.dgvMon.RowHeadersWidth = 51;
             this.dgvMon.RowTemplate.Height = 24;
-            this.dgvMon.Size = new System.Drawing.Size(1196, 717);
+            this.dgvMon.Size = new System.Drawing.Size(897, 574);
             this.dgvMon.TabIndex = 14;
             this.dgvMon.SelectionChanged += new System.EventHandler(this.dgvMon_SelectionChanged);
             // 
@@ -315,12 +326,31 @@
             this.Gia.Name = "Gia";
             this.Gia.Width = 200;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label4.Location = new System.Drawing.Point(17, 201);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(25, 12);
+            this.label4.TabIndex = 22;
+            this.label4.Text = "Loại";
+            // 
+            // cboLoai
+            // 
+            this.cboLoai.FormattingEnabled = true;
+            this.cboLoai.Location = new System.Drawing.Point(106, 193);
+            this.cboLoai.Name = "cboLoai";
+            this.cboLoai.Size = new System.Drawing.Size(175, 20);
+            this.cboLoai.TabIndex = 23;
+            // 
             // frmThemSP
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Rabbit_s_House.Properties.Resources.bg;
-            this.ClientSize = new System.Drawing.Size(1800, 811);
+            this.ClientSize = new System.Drawing.Size(1350, 649);
             this.Controls.Add(this.dgvMon);
             this.Controls.Add(this.btnTimKiem);
             this.Controls.Add(this.txtTimKiem);
@@ -328,6 +358,7 @@
             this.Controls.Add(this.toolStrip1);
             this.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmThemSP";
             this.Text = "Foods";
             this.Load += new System.EventHandler(this.frmThemSP_Load);
@@ -369,5 +400,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn MaMon;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenMon;
         private System.Windows.Forms.DataGridViewTextBoxColumn Gia;
+        private System.Windows.Forms.ComboBox cboLoai;
+        private System.Windows.Forms.Label label4;
     }
 }

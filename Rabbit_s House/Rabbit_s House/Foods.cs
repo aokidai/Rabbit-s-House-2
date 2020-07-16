@@ -36,6 +36,7 @@ namespace Rabbit_s_House
                 MessageBox.Show(ex.ToString());
             }
             var cmb = new SqlCommandBuilder(daMon);
+            loadCBOLoai();
             txtMaMon.DataBindings.Add("text", tblMon, "MaMon", true);
             txtTenMon.DataBindings.Add("text", tblMon, "TenMon", true);
             txtGia.DataBindings.Add("text", tblMon, "Gia", true);
@@ -53,7 +54,12 @@ namespace Rabbit_s_House
             tolSpSave.Enabled = capNhat;
             tolSpCannel.Enabled = capNhat;
         }
-
+        private void loadCBOLoai()
+        {
+            cboLoai.DataSource = tblMon;
+            cboLoai.DisplayMember = "Loai";
+            cboLoai.ValueMember = "MaMon";
+        }
 
         private void btnThemAnh_Click(object sender, EventArgs e)
         {

@@ -29,14 +29,7 @@ create table Mon
 	Gia varchar(10),
 	hinh image NULL,
 )
-create table hoadon
-(
-	MaKH char(4) references KhachHang(MaKH),
-	MaNV varchar(10) references NhanVien(MaNV),
-	MaMon varchar(5) references Mon(MaMon),
-	Ngaylap date,
-	primary key(MaKH,MaMon)
-)
+
 CREATE TABLE NHANVIEN(
 	MaNV varchar(10) NOT NULL,
 	TenNV nvarchar(30) NOT NULL,
@@ -61,7 +54,22 @@ CREATE TABLE LOAITK(
 	TenLTK nvarchar(30) NULL,
 	CONSTRAINT PK_LOAITK PRIMARY KEY (MaLTK)
 )
-
+create table hoadon
+(
+	MaHD char(4) primary key,
+	MaKH char(4) references KhachHang(MaKH),
+	MaNV varchar(10) references NhanVien(MaNV),
+	Ngaylap date,
+)
+create table chitiethoadon
+(
+	MaCTHD char(4) primary key,
+	MaHD char(4) references hoadon(MaHD),
+	MaMon varchar(5) references Mon(MaMon),
+	Soluong char(2),
+	ThanhTien money,
+	
+)
 ALTER TABLE KhachHang ADD CONSTRAINT CHECK_SDT CHECK(LEN(SoDT)=10)
 /****** Object:  ForeignKey FK_NhanVien_LoaiTK    Script Date: 04/05/2016 14:01:49 ******/
 ALTER TABLE NHANVIEN   ADD  CONSTRAINT FK_NhanVien_LoaiTK FOREIGN KEY(MaLTK) REFERENCES LOAITK (MaLTK)
