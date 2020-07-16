@@ -25,14 +25,16 @@ create table Mon
 (
 	MaMon varchar(5) primary key,
 	TenMon nvarchar(50),
+	Loai varchar(10),
 	Gia varchar(10),
 	hinh image NULL,
 )
 create table hoadon
 (
 	MaKH char(4) references KhachHang(MaKH),
-	MaKH varchar(10) references NhanVien(MaNV),
+	MaNV varchar(10) references NhanVien(MaNV),
 	MaMon varchar(5) references Mon(MaMon),
+	Ngaylap date,
 	primary key(MaKH,MaMon)
 )
 CREATE TABLE NHANVIEN(
@@ -68,24 +70,24 @@ GO
 ALTER TABLE CHAMCONG   ADD  CONSTRAINT FK_ChamCong_NhanVien FOREIGN KEY(MaNV) REFERENCES NHANVIEN (MaNV)
 GO
 
-insert into Mon values('cafe1','Cafe den',15000,NULL)
-insert into Mon values('cafe2',N'Cafe sữa',15000,NULL)
-insert into Mon values('cafe3',N'Bạc xỉu',15000,NULL)
-insert into Mon values('cafe4','Ca cao',15000,NULL)
-insert into Mon values('cafe5',N'Socala dá xay',15000,NULL)
-insert into Mon values('cafe6',N'Caramel dá xay',15000,NULL)
-insert into Mon values('nt1','Coca',15000,NULL)
-insert into Mon values('nt2','Mirina',15000,NULL)
-insert into Mon values('nt3','Pepsi',15000,NULL)
-insert into Mon values('nt4','7 up',15000,NULL)
-insert into Mon values('nt5','Fanta',15000,NULL)
-insert into Mon values('nt6','Sprite',15000,NULL)
-insert into Mon values('dav1',N'Bánh Tráng Trộn',15000,NULL)
-insert into Mon values('dav2',N'Bánh Hoa Quả',15000,NULL)
-insert into Mon values('dav3',N'Bánh Dây Tây',15000,NULL)
-insert into Mon values('dav4',N'Pancake',15000,NULL)
-insert into Mon values('dav5',N'Cupcake',15000,NULL)
-insert into Mon values('dav6','jelly cake',15000,NULL)
+insert into Mon values('cafe1','Cafe den','cafe',15000,NULL)
+insert into Mon values('cafe2',N'Cafe sữa','cafe',15000,NULL)
+insert into Mon values('cafe3',N'Bạc xỉu','cafe',15000,NULL)
+insert into Mon values('cafe4','Ca cao','cafe',15000,NULL)
+insert into Mon values('cafe5',N'Socala dá xay','cafe',15000,NULL)
+insert into Mon values('cafe6',N'Caramel dá xay','cafe',15000,NULL)
+insert into Mon values('nt1','Coca','nuocngot',15000,NULL)
+insert into Mon values('nt2','Mirina','nuocngot',15000,NULL)
+insert into Mon values('nt3','Pepsi','nuocngot',15000,NULL)
+insert into Mon values('nt4','7 up','nuocngot',15000,NULL)
+insert into Mon values('nt5','Fanta','nuocngot',15000,NULL)
+insert into Mon values('nt6','Sprite','nuocngot',15000,NULL)
+insert into Mon values('dav1',N'Bánh Tráng Trộn','doan',15000,NULL)
+insert into Mon values('dav2',N'Bánh Hoa Quả','doan',15000,NULL)
+insert into Mon values('dav3',N'Bánh Dây Tây','doan',15000,NULL)
+insert into Mon values('dav4',N'Pancake','doan',15000,NULL)
+insert into Mon values('dav5',N'Cupcake','doan',15000,NULL)
+insert into Mon values('dav6','jelly cake','doan',15000,NULL)
 
 --Insert table LOAITK
 insert into LOAITK values(1,N'Admin')
