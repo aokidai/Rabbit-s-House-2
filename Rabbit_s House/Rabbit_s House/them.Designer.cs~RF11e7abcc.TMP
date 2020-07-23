@@ -1,0 +1,306 @@
+﻿namespace Rabbit_s_House
+{
+    partial class them
+    {
+        /// <summary> 
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary> 
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Component Designer generated code
+
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            this.label1 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.mamon = new System.Windows.Forms.TextBox();
+            this.tenmon = new System.Windows.Forms.TextBox();
+            this.gia = new System.Windows.Forms.TextBox();
+            this.loai = new System.Windows.Forms.TextBox();
+            this.btnthem = new System.Windows.Forms.Button();
+            this.btnluu = new System.Windows.Forms.Button();
+            this.btnhuy = new System.Windows.Forms.Button();
+            this.btnxoa = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.mon = new Rabbit_s_House.mon();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.monBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.monBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.monTableAdapter = new Rabbit_s_House.monTableAdapters.MonTableAdapter();
+            this.monBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.maMonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenMonDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.giaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.loaiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mon)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.monBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.monBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.monBindingSource2)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(17, 17);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(46, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Mã Món";
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(35, 39);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(0, 0);
+            this.flowLayoutPanel1.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(17, 74);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(50, 13);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Tên Món";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(17, 128);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(23, 13);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Giá";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(17, 180);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(27, 13);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Loại";
+            // 
+            // mamon
+            // 
+            this.mamon.Location = new System.Drawing.Point(73, 19);
+            this.mamon.Name = "mamon";
+            this.mamon.Size = new System.Drawing.Size(100, 20);
+            this.mamon.TabIndex = 2;
+            // 
+            // tenmon
+            // 
+            this.tenmon.Location = new System.Drawing.Point(73, 67);
+            this.tenmon.Name = "tenmon";
+            this.tenmon.Size = new System.Drawing.Size(100, 20);
+            this.tenmon.TabIndex = 2;
+            // 
+            // gia
+            // 
+            this.gia.Location = new System.Drawing.Point(73, 121);
+            this.gia.Name = "gia";
+            this.gia.Size = new System.Drawing.Size(100, 20);
+            this.gia.TabIndex = 2;
+            // 
+            // loai
+            // 
+            this.loai.Location = new System.Drawing.Point(73, 173);
+            this.loai.Name = "loai";
+            this.loai.Size = new System.Drawing.Size(100, 20);
+            this.loai.TabIndex = 2;
+            // 
+            // btnthem
+            // 
+            this.btnthem.Location = new System.Drawing.Point(20, 232);
+            this.btnthem.Name = "btnthem";
+            this.btnthem.Size = new System.Drawing.Size(75, 23);
+            this.btnthem.TabIndex = 3;
+            this.btnthem.Text = "Thêm";
+            this.btnthem.UseVisualStyleBackColor = true;
+            this.btnthem.Click += new System.EventHandler(this.btnthem_Click);
+            // 
+            // btnluu
+            // 
+            this.btnluu.Location = new System.Drawing.Point(114, 232);
+            this.btnluu.Name = "btnluu";
+            this.btnluu.Size = new System.Drawing.Size(75, 23);
+            this.btnluu.TabIndex = 3;
+            this.btnluu.Text = "Lưu";
+            this.btnluu.UseVisualStyleBackColor = true;
+            this.btnluu.Click += new System.EventHandler(this.btnluu_Click);
+            // 
+            // btnhuy
+            // 
+            this.btnhuy.Location = new System.Drawing.Point(114, 279);
+            this.btnhuy.Name = "btnhuy";
+            this.btnhuy.Size = new System.Drawing.Size(75, 23);
+            this.btnhuy.TabIndex = 3;
+            this.btnhuy.Text = "Hủy";
+            this.btnhuy.UseVisualStyleBackColor = true;
+            this.btnhuy.Click += new System.EventHandler(this.btnhuy_Click);
+            // 
+            // btnxoa
+            // 
+            this.btnxoa.Location = new System.Drawing.Point(20, 279);
+            this.btnxoa.Name = "btnxoa";
+            this.btnxoa.Size = new System.Drawing.Size(75, 23);
+            this.btnxoa.TabIndex = 3;
+            this.btnxoa.Text = "Xóa";
+            this.btnxoa.UseVisualStyleBackColor = true;
+            this.btnxoa.Click += new System.EventHandler(this.btnxoa_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.maMonDataGridViewTextBoxColumn,
+            this.tenMonDataGridViewTextBoxColumn,
+            this.giaDataGridViewTextBoxColumn,
+            this.loaiDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.monBindingSource2;
+            this.dataGridView1.Location = new System.Drawing.Point(220, 3);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(544, 311);
+            this.dataGridView1.TabIndex = 4;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // mon
+            // 
+            this.mon.DataSetName = "mon";
+            this.mon.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Controls.Add(this.btnxoa);
+            this.groupBox1.Controls.Add(this.btnhuy);
+            this.groupBox1.Controls.Add(this.btnluu);
+            this.groupBox1.Controls.Add(this.btnthem);
+            this.groupBox1.Controls.Add(this.loai);
+            this.groupBox1.Controls.Add(this.gia);
+            this.groupBox1.Controls.Add(this.tenmon);
+            this.groupBox1.Controls.Add(this.mamon);
+            this.groupBox1.Controls.Add(this.flowLayoutPanel1);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Location = new System.Drawing.Point(14, 46);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(773, 322);
+            this.groupBox1.TabIndex = 5;
+            this.groupBox1.TabStop = false;
+            // 
+            // monBindingSource
+            // 
+            this.monBindingSource.DataSource = this.mon;
+            this.monBindingSource.Position = 0;
+            // 
+            // monBindingSource1
+            // 
+            this.monBindingSource1.DataMember = "Mon";
+            this.monBindingSource1.DataSource = this.monBindingSource;
+            // 
+            // monTableAdapter
+            // 
+            this.monTableAdapter.ClearBeforeFill = true;
+            // 
+            // monBindingSource2
+            // 
+            this.monBindingSource2.DataMember = "Mon";
+            this.monBindingSource2.DataSource = this.mon;
+            // 
+            // maMonDataGridViewTextBoxColumn
+            // 
+            this.maMonDataGridViewTextBoxColumn.DataPropertyName = "MaMon";
+            this.maMonDataGridViewTextBoxColumn.HeaderText = "MaMon";
+            this.maMonDataGridViewTextBoxColumn.Name = "maMonDataGridViewTextBoxColumn";
+            // 
+            // tenMonDataGridViewTextBoxColumn
+            // 
+            this.tenMonDataGridViewTextBoxColumn.DataPropertyName = "TenMon";
+            this.tenMonDataGridViewTextBoxColumn.HeaderText = "TenMon";
+            this.tenMonDataGridViewTextBoxColumn.Name = "tenMonDataGridViewTextBoxColumn";
+            // 
+            // giaDataGridViewTextBoxColumn
+            // 
+            this.giaDataGridViewTextBoxColumn.DataPropertyName = "Gia";
+            this.giaDataGridViewTextBoxColumn.HeaderText = "Gia";
+            this.giaDataGridViewTextBoxColumn.Name = "giaDataGridViewTextBoxColumn";
+            // 
+            // loaiDataGridViewTextBoxColumn
+            // 
+            this.loaiDataGridViewTextBoxColumn.DataPropertyName = "loai";
+            this.loaiDataGridViewTextBoxColumn.HeaderText = "loai";
+            this.loaiDataGridViewTextBoxColumn.Name = "loaiDataGridViewTextBoxColumn";
+            // 
+            // them
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.groupBox1);
+            this.Name = "them";
+            this.Size = new System.Drawing.Size(788, 387);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mon)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.monBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.monBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.monBindingSource2)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox mamon;
+        private System.Windows.Forms.TextBox tenmon;
+        private System.Windows.Forms.TextBox gia;
+        private System.Windows.Forms.TextBox loai;
+        private System.Windows.Forms.Button btnthem;
+        private System.Windows.Forms.Button btnluu;
+        private System.Windows.Forms.Button btnhuy;
+        private System.Windows.Forms.Button btnxoa;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private mon mon;
+        private System.Windows.Forms.BindingSource monBindingSource;
+        private System.Windows.Forms.BindingSource monBindingSource1;
+        private monTableAdapters.MonTableAdapter monTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maMonDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenMonDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn giaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn loaiDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource monBindingSource2;
+    }
+}

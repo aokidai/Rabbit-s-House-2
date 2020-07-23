@@ -22,14 +22,7 @@ namespace Rabbit_s_House
             SidePanel.Height = cf.Height;
             SidePanel.Top = cf.Top;
             //cafe1.BringToFront();
-            while (reader.Read())
-            {
-                string alio = reader["fornamn"].ToString();
-                string efternamn = reader["efternamn"].ToString();
-                ListViewItem lvi = new ListViewItem(alio);
-                listView1.Items.Add(lvi);
-                lvi.SubItems.Add(efternamn);
-            }
+           
         }
         DataTable tblhoadon, tblKhachHang, tblMon, tblCTHD;
         SqlDataAdapter daHD, daKH, daMo, daCTHD;

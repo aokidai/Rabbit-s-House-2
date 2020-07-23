@@ -116,3 +116,24 @@ C:\Users\Dat\Desktop\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Ra
 C:\Users\Dat\Desktop\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\bin\Debug\Rabbit's House.exe.config
 C:\Users\Dat\Desktop\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\bin\Debug\Rabbit's House.exe
 C:\Users\Dat\Desktop\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\bin\Debug\Rabbit's House.pdb
+D:\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\bin\Debug\Rabbit's House.exe.config
+D:\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\bin\Debug\Rabbit's House.exe
+D:\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\bin\Debug\Rabbit's House.pdb
+D:\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s House.csprojAssemblyReference.cache
+D:\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.about.resources
+D:\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.cafe.resources
+D:\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.frmChangepass.resources
+D:\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.dav.resources
+D:\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.frmForgotpass.resources
+D:\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.frmThemSP.resources
+D:\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.frmLogin.resources
+D:\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.frmIndex.resources
+D:\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.frmManager.resources
+D:\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.nuocngot.resources
+D:\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.Properties.Resources.resources
+D:\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.frmQuanLi.resources
+D:\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.frmStaffs.resources
+D:\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s House.csproj.GenerateResource.cache
+D:\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s House.csproj.CoreCompileInputs.cache
+D:\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit's House.exe
+D:\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit's House.pdb
