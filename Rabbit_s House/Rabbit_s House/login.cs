@@ -33,6 +33,11 @@ namespace Rabbit_s_House
                 if(txtMatkhau.Text=="123")
                 {
                     MessageBox.Show("Hẫy đổi lại mật khẩu tại trang chủ chọn [Account]->[Change Pass]!");
+                    fI.Text = "Rabbit's House - Welcome " + r[0]["TenNV"].ToString();
+                    fI.maNV = r[0]["MaNV"].ToString();
+                    fI.enableControl((int)r[0]["MaLTK"]);
+                    fI.Show();
+                    this.Hide();
                 }
                 else
                 {

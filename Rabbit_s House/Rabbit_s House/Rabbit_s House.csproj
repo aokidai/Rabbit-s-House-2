@@ -52,11 +52,23 @@
     <Compile Include="about.Designer.cs">
       <DependentUpon>about.cs</DependentUpon>
     </Compile>
+    <Compile Include="cafe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="cafe.Designer.cs">
+      <DependentUpon>cafe.cs</DependentUpon>
+    </Compile>
     <Compile Include="changepass.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="changepass.Designer.cs">
       <DependentUpon>changepass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dav.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="dav.Designer.cs">
+      <DependentUpon>dav.cs</DependentUpon>
     </Compile>
     <Compile Include="forgotpass.cs">
       <SubType>Form</SubType>
@@ -88,6 +100,12 @@
     </Compile>
     <Compile Include="model\Taikhoan.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="nuocngot.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="nuocngot.Designer.cs">
+      <DependentUpon>nuocngot.cs</DependentUpon>
     </Compile>
     <Compile Include="quanli.cs">
       <SubType>Form</SubType>
@@ -128,8 +146,14 @@
     <EmbeddedResource Include="about.resx">
       <DependentUpon>about.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Cafe.resx">
+      <DependentUpon>cafe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="changepass.resx">
       <DependentUpon>changepass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dav.resx">
+      <DependentUpon>dav.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forgotpass.resx">
       <DependentUpon>forgotpass.cs</DependentUpon>
@@ -145,6 +169,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="manager.resx">
       <DependentUpon>manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nuocngot.resx">
+      <DependentUpon>nuocngot.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -95,3 +95,24 @@ C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbi
 C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit's House.pdb
 C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s House.csprojAssemblyReference.cache
 C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.frmThemSP.resources
+C:\Users\Dat\Desktop\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s House.csprojAssemblyReference.cache
+C:\Users\Dat\Desktop\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.about.resources
+C:\Users\Dat\Desktop\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.cafe.resources
+C:\Users\Dat\Desktop\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.frmChangepass.resources
+C:\Users\Dat\Desktop\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.dav.resources
+C:\Users\Dat\Desktop\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.frmForgotpass.resources
+C:\Users\Dat\Desktop\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.frmThemSP.resources
+C:\Users\Dat\Desktop\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.frmLogin.resources
+C:\Users\Dat\Desktop\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.frmIndex.resources
+C:\Users\Dat\Desktop\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.frmManager.resources
+C:\Users\Dat\Desktop\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.nuocngot.resources
+C:\Users\Dat\Desktop\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.Properties.Resources.resources
+C:\Users\Dat\Desktop\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.frmQuanLi.resources
+C:\Users\Dat\Desktop\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.frmStaffs.resources
+C:\Users\Dat\Desktop\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s House.csproj.GenerateResource.cache
+C:\Users\Dat\Desktop\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s House.csproj.CoreCompileInputs.cache
+C:\Users\Dat\Desktop\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit's House.exe
+C:\Users\Dat\Desktop\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit's House.pdb
+C:\Users\Dat\Desktop\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\bin\Debug\Rabbit's House.exe.config
+C:\Users\Dat\Desktop\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\bin\Debug\Rabbit's House.exe
+C:\Users\Dat\Desktop\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\bin\Debug\Rabbit's House.pdb

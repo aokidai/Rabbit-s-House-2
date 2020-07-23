@@ -37,10 +37,7 @@
             this.Gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Giamgia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgayBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.MaSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvmon = new System.Windows.Forms.DataGridView();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.tolSpInsert = new System.Windows.Forms.ToolStripButton();
             this.tolSpEdit = new System.Windows.Forms.ToolStripButton();
@@ -52,12 +49,13 @@
             this.txtError = new System.Windows.Forms.TextBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngay = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHoaDon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvmon)).BeginInit();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
@@ -74,11 +72,10 @@
             this.Gia,
             this.Giamgia,
             this.NgayBan});
-            this.dgvHoaDon.Location = new System.Drawing.Point(16, 72);
-            this.dgvHoaDon.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.dgvHoaDon.Location = new System.Drawing.Point(12, 62);
             this.dgvHoaDon.Name = "dgvHoaDon";
             this.dgvHoaDon.RowHeadersWidth = 51;
-            this.dgvHoaDon.Size = new System.Drawing.Size(1013, 293);
+            this.dgvHoaDon.Size = new System.Drawing.Size(760, 254);
             this.dgvHoaDon.TabIndex = 5;
             // 
             // STT
@@ -130,41 +127,19 @@
             this.NgayBan.Name = "NgayBan";
             this.NgayBan.Width = 125;
             // 
-            // dataGridView1
+            // dgvmon
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvmon.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dgvmon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvmon.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaSP,
             this.Column1,
             this.Column2});
-            this.dataGridView1.Location = new System.Drawing.Point(1076, 72);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(457, 661);
-            this.dataGridView1.TabIndex = 6;
-            // 
-            // MaSP
-            // 
-            this.MaSP.HeaderText = "Mã Sản Phẩm";
-            this.MaSP.MinimumWidth = 6;
-            this.MaSP.Name = "MaSP";
-            this.MaSP.Width = 125;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Sản phẩm";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 125;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Giá Thành";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 125;
+            this.dgvmon.Location = new System.Drawing.Point(807, 62);
+            this.dgvmon.Name = "dgvmon";
+            this.dgvmon.RowHeadersWidth = 51;
+            this.dgvmon.Size = new System.Drawing.Size(391, 573);
+            this.dgvmon.TabIndex = 6;
             // 
             // toolStrip1
             // 
@@ -179,7 +154,7 @@
             this.tolSpPrint});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1813, 47);
+            this.toolStrip1.Size = new System.Drawing.Size(1198, 47);
             this.toolStrip1.TabIndex = 7;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -249,10 +224,9 @@
             // txtError
             // 
             this.txtError.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtError.Location = new System.Drawing.Point(16, 741);
-            this.txtError.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtError.Location = new System.Drawing.Point(12, 642);
             this.txtError.Name = "txtError";
-            this.txtError.Size = new System.Drawing.Size(1775, 15);
+            this.txtError.Size = new System.Drawing.Size(1331, 13);
             this.txtError.TabIndex = 8;
             // 
             // dataGridView2
@@ -261,15 +235,12 @@
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6});
-            this.dataGridView2.Location = new System.Drawing.Point(16, 394);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.ngay,
+            this.gio});
+            this.dataGridView2.Location = new System.Drawing.Point(12, 341);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.Size = new System.Drawing.Size(1013, 341);
+            this.dataGridView2.Size = new System.Drawing.Size(455, 296);
             this.dataGridView2.TabIndex = 5;
             // 
             // dataGridViewTextBoxColumn2
@@ -279,51 +250,57 @@
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.Width = 200;
             // 
-            // dataGridViewTextBoxColumn3
+            // ngay
             // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "Số Điện Thoại";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 175;
+            this.ngay.HeaderText = "Ngày";
+            this.ngay.Name = "ngay";
             // 
-            // dataGridViewTextBoxColumn4
+            // gio
             // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "Email";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.Width = 175;
+            this.gio.HeaderText = "Số giờ làm";
+            this.gio.Name = "gio";
             // 
-            // dataGridViewTextBoxColumn5
+            // MaSP
             // 
-            this.dataGridViewTextBoxColumn5.HeaderText = "Số K.H bán được";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.Width = 125;
+            this.MaSP.DataPropertyName = "MaMon";
+            this.MaSP.HeaderText = "Mã Sản Phẩm";
+            this.MaSP.MinimumWidth = 6;
+            this.MaSP.Name = "MaSP";
+            this.MaSP.Width = 125;
             // 
-            // dataGridViewTextBoxColumn6
+            // Column1
             // 
-            this.dataGridViewTextBoxColumn6.HeaderText = "Lương";
-            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.Width = 125;
+            this.Column1.DataPropertyName = "TenMon";
+            this.Column1.HeaderText = "Sản phẩm";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 125;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "Gia";
+            this.Column2.HeaderText = "Giá Thành";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 125;
             // 
             // frmQuanLi
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Rabbit_s_House.Properties.Resources.bg;
-            this.ClientSize = new System.Drawing.Size(1813, 763);
+            this.ClientSize = new System.Drawing.Size(1198, 649);
             this.Controls.Add(this.txtError);
             this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvmon);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dgvHoaDon);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "frmQuanLi";
             this.Text = "Admin";
+            this.Load += new System.EventHandler(this.frmQuanLi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHoaDon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvmon)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
@@ -335,10 +312,7 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvHoaDon;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaSP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridView dgvmon;
         private System.Windows.Forms.DataGridViewTextBoxColumn STT;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenKH;
         private System.Windows.Forms.DataGridViewTextBoxColumn Sdt;
@@ -357,9 +331,10 @@
         private System.Windows.Forms.TextBox txtError;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ngay;
+        private System.Windows.Forms.DataGridViewTextBoxColumn gio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaSP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
     }
 }

@@ -36,9 +36,11 @@ namespace Rabbit_s_House
                 MessageBox.Show(ex.ToString());
             }
             var cmb = new SqlCommandBuilder(daMon);
+            loaddgvMon();
             txtMaMon.DataBindings.Add("text", tblMon, "MaMon", true);
             txtTenMon.DataBindings.Add("text", tblMon, "TenMon", true);
             txtGia.DataBindings.Add("text", tblMon, "Gia", true);
+            pHinh.DataBindings.Add("image", tblMon, "hinh", true);
             DSMon = this.BindingContext[tblMon];
             enableButton();
         }
@@ -53,11 +55,19 @@ namespace Rabbit_s_House
             tolSpSave.Enabled = capNhat;
             tolSpCannel.Enabled = capNhat;
         }
-
-
-        private void btnThemAnh_Click(object sender, EventArgs e)
+        private void loaddgvMon()
         {
+            dgvMon.AutoGenerateColumns = false;
+            dgvMon.DataSource = tblMon;
+           }
 
+            private void btnThemAnh_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Filter = "JPG Files|*.jpg|PNG Files|*.png|All Files|*.*";
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                pHinh.ImageLocation = openFileDialog1.FileName;
+            }
         }
 
         private void tolSpInsert_Click(object sender, EventArgs e)
@@ -100,7 +110,7 @@ namespace Rabbit_s_House
                 daMon.Update(tblMon);
                 tblMon.AcceptChanges();
             }
-            catch (SqlException ex)
+            catch (SqlException)
             {
                 tblMon.RejectChanges();
                 MessageBox.Show("Xóa thất bại!!!");
@@ -148,6 +158,11 @@ namespace Rabbit_s_House
             {
                 tolSpCannel_Click(sender, e);
             }
+        }
+
+        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }
