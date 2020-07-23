@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="about.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +59,8 @@
     <Compile Include="cafe.Designer.cs">
       <DependentUpon>cafe.cs</DependentUpon>
     </Compile>
+=======
+>>>>>>> 35f12f0642c3403e5714b00d2831c37ab6f54d43
     <Compile Include="changepass.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,12 +146,15 @@
     <Compile Include="Staffs.Designer.cs">
       <DependentUpon>Staffs.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <EmbeddedResource Include="about.resx">
       <DependentUpon>about.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cafe.resx">
       <DependentUpon>cafe.cs</DependentUpon>
     </EmbeddedResource>
+=======
+>>>>>>> 35f12f0642c3403e5714b00d2831c37ab6f54d43
     <EmbeddedResource Include="changepass.resx">
       <DependentUpon>changepass.cs</DependentUpon>
     </EmbeddedResource>

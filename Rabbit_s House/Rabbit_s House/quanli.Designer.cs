@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQuanLi));
             this.dgvHoaDon = new System.Windows.Forms.DataGridView();
+<<<<<<< HEAD
             this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Sdt = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -38,6 +39,9 @@
             this.Giamgia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgayBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvmon = new System.Windows.Forms.DataGridView();
+=======
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+>>>>>>> 35f12f0642c3403e5714b00d2831c37ab6f54d43
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.tolSpInsert = new System.Windows.Forms.ToolStripButton();
             this.tolSpEdit = new System.Windows.Forms.ToolStripButton();
@@ -48,9 +52,22 @@
             this.tolSpPrint = new System.Windows.Forms.ToolStripButton();
             this.txtError = new System.Windows.Forms.TextBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.TenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Sdt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Giamgia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+<<<<<<< HEAD
             this.ngay = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+=======
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+>>>>>>> 35f12f0642c3403e5714b00d2831c37ab6f54d43
             this.MaSP = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -65,7 +82,6 @@
             this.dgvHoaDon.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dgvHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvHoaDon.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.STT,
             this.TenKH,
             this.Sdt,
             this.TenMon,
@@ -78,6 +94,7 @@
             this.dgvHoaDon.Size = new System.Drawing.Size(760, 254);
             this.dgvHoaDon.TabIndex = 5;
             // 
+<<<<<<< HEAD
             // STT
             // 
             this.STT.HeaderText = "STT";
@@ -128,6 +145,9 @@
             this.NgayBan.Width = 125;
             // 
             // dgvmon
+=======
+            // dataGridView1
+>>>>>>> 35f12f0642c3403e5714b00d2831c37ab6f54d43
             // 
             this.dgvmon.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dgvmon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -135,11 +155,20 @@
             this.MaSP,
             this.Column1,
             this.Column2});
+<<<<<<< HEAD
             this.dgvmon.Location = new System.Drawing.Point(807, 62);
             this.dgvmon.Name = "dgvmon";
             this.dgvmon.RowHeadersWidth = 51;
             this.dgvmon.Size = new System.Drawing.Size(391, 573);
             this.dgvmon.TabIndex = 6;
+=======
+            this.dataGridView1.Location = new System.Drawing.Point(1076, 72);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(457, 661);
+            this.dataGridView1.TabIndex = 6;
+>>>>>>> 35f12f0642c3403e5714b00d2831c37ab6f54d43
             // 
             // toolStrip1
             // 
@@ -243,8 +272,55 @@
             this.dataGridView2.Size = new System.Drawing.Size(455, 296);
             this.dataGridView2.TabIndex = 5;
             // 
+            // TenKH
+            // 
+            this.TenKH.DataPropertyName = "HoTen";
+            this.TenKH.HeaderText = "Tên khách Hàng";
+            this.TenKH.MinimumWidth = 6;
+            this.TenKH.Name = "TenKH";
+            this.TenKH.Width = 200;
+            // 
+            // Sdt
+            // 
+            this.Sdt.DataPropertyName = "SoDT";
+            this.Sdt.HeaderText = "Số Điện Thoại";
+            this.Sdt.MinimumWidth = 6;
+            this.Sdt.Name = "Sdt";
+            this.Sdt.Width = 175;
+            // 
+            // TenMon
+            // 
+            this.TenMon.DataPropertyName = "TenMon";
+            this.TenMon.HeaderText = "Tên Món";
+            this.TenMon.MinimumWidth = 6;
+            this.TenMon.Name = "TenMon";
+            this.TenMon.Width = 175;
+            // 
+            // Gia
+            // 
+            this.Gia.DataPropertyName = "Gia";
+            this.Gia.HeaderText = "Giá Tiền";
+            this.Gia.MinimumWidth = 6;
+            this.Gia.Name = "Gia";
+            this.Gia.Width = 125;
+            // 
+            // Giamgia
+            // 
+            this.Giamgia.HeaderText = "Giảm Giá";
+            this.Giamgia.MinimumWidth = 6;
+            this.Giamgia.Name = "Giamgia";
+            this.Giamgia.Width = 125;
+            // 
+            // NgayBan
+            // 
+            this.NgayBan.HeaderText = "Ngày Bán";
+            this.NgayBan.MinimumWidth = 6;
+            this.NgayBan.Name = "NgayBan";
+            this.NgayBan.Width = 125;
+            // 
             // dataGridViewTextBoxColumn2
             // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "TenNV";
             this.dataGridViewTextBoxColumn2.HeaderText = "Tên Nhân Viên";
             this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
@@ -252,13 +328,53 @@
             // 
             // ngay
             // 
+<<<<<<< HEAD
             this.ngay.HeaderText = "Ngày";
             this.ngay.Name = "ngay";
+=======
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "SoDT";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Số Điện Thoại";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 175;
+>>>>>>> 35f12f0642c3403e5714b00d2831c37ab6f54d43
             // 
             // gio
             // 
+<<<<<<< HEAD
             this.gio.HeaderText = "Số giờ làm";
             this.gio.Name = "gio";
+=======
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Email";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Email";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Width = 175;
+>>>>>>> 35f12f0642c3403e5714b00d2831c37ab6f54d43
+            // 
+            // MaSP
+            // 
+            this.MaSP.DataPropertyName = "MaMon";
+            this.MaSP.HeaderText = "Mã Sản Phẩm";
+            this.MaSP.MinimumWidth = 6;
+            this.MaSP.Name = "MaSP";
+            this.MaSP.Width = 125;
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "TenMon";
+            this.Column1.HeaderText = "Sản phẩm";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 125;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "Gia";
+            this.Column2.HeaderText = "Giá Thành";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 125;
             // 
             // MaSP
             // 
@@ -312,6 +428,7 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvHoaDon;
+<<<<<<< HEAD
         private System.Windows.Forms.DataGridView dgvmon;
         private System.Windows.Forms.DataGridViewTextBoxColumn STT;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenKH;
@@ -320,6 +437,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Gia;
         private System.Windows.Forms.DataGridViewTextBoxColumn Giamgia;
         private System.Windows.Forms.DataGridViewTextBoxColumn NgayBan;
+=======
+        private System.Windows.Forms.DataGridView dataGridView1;
+>>>>>>> 35f12f0642c3403e5714b00d2831c37ab6f54d43
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton tolSpInsert;
         private System.Windows.Forms.ToolStripButton tolSpEdit;
@@ -330,6 +450,15 @@
         private System.Windows.Forms.ToolStripButton tolSpPrint;
         private System.Windows.Forms.TextBox txtError;
         private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenKH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Sdt;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenMon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Gia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Giamgia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgayBan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaSP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn ngay;
         private System.Windows.Forms.DataGridViewTextBoxColumn gio;

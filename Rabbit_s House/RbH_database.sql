@@ -56,15 +56,25 @@ CREATE TABLE LOAITK(
 )
 create table hoadon
 (
+<<<<<<< HEAD
 	MaHD int identity(1,1) primary key,
 	MaKH int references KhachHang(MaKH),
+=======
+	MaHD char(4) primary key,
+	MaKH char(4) references KhachHang(MaKH),
+>>>>>>> 35f12f0642c3403e5714b00d2831c37ab6f54d43
 	MaNV varchar(10) references NhanVien(MaNV),
 	Ngaylap date,
 )
 create table chitiethoadon
 (
+<<<<<<< HEAD
 	MaCTHD int identity(1,1) primary key,
 	MaHD int references hoadon(MaHD),
+=======
+	MaCTHD char(4) primary key,
+	MaHD char(4) references hoadon(MaHD),
+>>>>>>> 35f12f0642c3403e5714b00d2831c37ab6f54d43
 	MaMon varchar(5) references Mon(MaMon),
 	Soluong char(2),
 	ThanhTien money,

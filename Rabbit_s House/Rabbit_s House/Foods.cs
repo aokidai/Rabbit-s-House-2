@@ -36,7 +36,11 @@ namespace Rabbit_s_House
                 MessageBox.Show(ex.ToString());
             }
             var cmb = new SqlCommandBuilder(daMon);
+<<<<<<< HEAD
             loaddgvMon();
+=======
+            loadCBOLoai();
+>>>>>>> 35f12f0642c3403e5714b00d2831c37ab6f54d43
             txtMaMon.DataBindings.Add("text", tblMon, "MaMon", true);
             txtTenMon.DataBindings.Add("text", tblMon, "TenMon", true);
             txtGia.DataBindings.Add("text", tblMon, "Gia", true);
@@ -55,7 +59,18 @@ namespace Rabbit_s_House
             tolSpSave.Enabled = capNhat;
             tolSpCannel.Enabled = capNhat;
         }
+<<<<<<< HEAD
         private void loaddgvMon()
+=======
+        private void loadCBOLoai()
+        {
+            cboLoai.DataSource = tblMon;
+            cboLoai.DisplayMember = "Loai";
+            cboLoai.ValueMember = "MaMon";
+        }
+
+        private void btnThemAnh_Click(object sender, EventArgs e)
+>>>>>>> 35f12f0642c3403e5714b00d2831c37ab6f54d43
         {
             dgvMon.AutoGenerateColumns = false;
             dgvMon.DataSource = tblMon;
