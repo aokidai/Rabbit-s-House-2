@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0BC834F5-8B05-421E-9BB6-64E6481E3957}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Rabbit_s_House</RootNamespace>
+    <AssemblyName>Rabbit%27s House</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="about.Designer.cs">
+      <DependentUpon>about.cs</DependentUpon>
+    </Compile>
+    <Compile Include="banhang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="banhang.Designer.cs">
+      <DependentUpon>banhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cafe.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="cafe.Designer.cs">
+      <DependentUpon>cafe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="changepass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changepass.Designer.cs">
+      <DependentUpon>changepass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClasFunctionss1.cs" />
+    <Compile Include="dav.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="dav.Designer.cs">
+      <DependentUpon>dav.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forgotpass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forgotpass.Designer.cs">
+      <DependentUpon>forgotpass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Foods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Foods.Designer.cs">
+      <DependentUpon>Foods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager.Designer.cs">
+      <DependentUpon>Manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model.cs" />
+    <Compile Include="model\chamcong.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="model\hoadon.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="model\khachhang.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="model\mon.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="model\NhanVien.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="model\Taikhoan.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="nuocngot.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="nuocngot.Designer.cs">
+      <DependentUpon>nuocngot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="quanli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="quanli.Designer.cs">
+      <DependentUpon>quanli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="index.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="index.Designer.cs">
+      <DependentUpon>index.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="serverlogin.cs" />
+    <Compile Include="model\table.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Staffs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staffs.Designer.cs">
+      <DependentUpon>Staffs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="themkhach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="themkhach.Designer.cs">
+      <DependentUpon>themkhach.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="about.resx">
+      <DependentUpon>about.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="banhang.resx">
+      <DependentUpon>banhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cafe.resx">
+      <DependentUpon>cafe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changepass.resx">
+      <DependentUpon>changepass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dav.resx">
+      <DependentUpon>dav.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forgotpass.resx">
+      <DependentUpon>forgotpass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Foods.resx">
+      <DependentUpon>Foods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="index.resx">
+      <DependentUpon>index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager.resx">
+      <DependentUpon>Manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nuocngot.resx">
+      <DependentUpon>nuocngot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="quanli.resx">
+      <DependentUpon>quanli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staffs.resx">
+      <DependentUpon>Staffs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="themkhach.resx">
+      <DependentUpon>themkhach.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\bg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\cafe\cafe_den.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\cafe\den2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\cafe\bac_siu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\cafe\cafe-sua-nong_min.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\cafe\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\cafe\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\cafe\caramel-da-xay-1545123727.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\cafe\coca-sleek-330ml-3_grande.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\cafe\Nước_Ngọt_Mirinda_Green_Cream_Flavor__330m_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\cafe\nuoc-ngot-7up-thai-lon-330ml.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\cafe\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\cafe\thung-nuoc-ngot-fanta-cam-my-loc-12-lon-1-510x510.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\cafe\nuoc-ngot-sprite-chai-390ml.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\cafe\recipe1615-prepare-step3-636520093053653228.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\cafe\640x640_rect_79439140.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\cafe\Strawberry-Shortcake-Recipe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\cafe\440px-Pancake_of_the_phases_of_the_moon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\cafe\Ka2_17-1024x576.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\cafe\hhh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\SlideBar\icons8-挿入-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\SlideBar\icons8-鉛筆-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\SlideBar\icons8-削除-52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\SlideBar\icons8-セーブ-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\SlideBar\icons8-元に戻す-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\SlideBar\icons8-ファイルの表示-52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\SlideBar\icons8-プリント-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\cafe\2cf3de1421350014af841348e8a1b0fb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\cafe\1566702464-5-thumbnail.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\cafe\green_sbov.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\cafe\yamamoto-mattcha-cafe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\cafe\recipe9014-prepare-step3-635615012214478617.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\cafe\cach-lam-sinh-to-bo-ngon-khong-bi-dang-cuc-don-gian-4-1587467278-979-width512height512.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\SlideBar\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
