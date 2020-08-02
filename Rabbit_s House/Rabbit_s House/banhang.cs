@@ -17,6 +17,7 @@ namespace Rabbit_s_House
 {
     public partial class banhang : Form
     {
+
         DataTable tblCTHDB;
         public banhang()
         {
@@ -40,11 +41,11 @@ namespace Rabbit_s_House
             txtTongTien.ReadOnly = true;
             txtGiamGia.Text = "0";
             txtTongTien.Text = "0";
-            Functions.FillCombo("SELECT MaKhach, TenKhach FROM tblKhach", cboMaKhach, "MaKhach", "MaKhach");
+            Functions.FillCombo("SELECT MaKhach, TenKhach FROM KhachHang", cboMaKhach, "MaKhach", "MaKhach");
             cboMaKhach.SelectedIndex = -1;
-            Functions.FillCombo("SELECT MaNhanVien, TenNhanVien FROM tblNhanVien", cboMaNhanVien, "MaNhanVien", "TenKhach");
+            Functions.FillCombo("SELECT MaNhanVien, TenNhanVien FROM NHANVIEN", cboMaNhanVien, "MaNhanVien", "TenKhach");
             cboMaNhanVien.SelectedIndex = -1;
-            Functions.FillCombo("SELECT MaHang, TenHang FROM tblHang", cboMaHang, "MaHang", "MaHang");
+            Functions.FillCombo("SELECT MaHang, TenHang FROM KhachHang", cboMaHang, "MaHang", "MaHang");
             cboMaHang.SelectedIndex = -1;
             //Hiển thị thông tin của một hóa đơn được gọi từ form tìm kiếm
             if (txtMaHDBan.Text != "")

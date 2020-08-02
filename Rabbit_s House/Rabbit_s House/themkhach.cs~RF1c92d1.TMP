@@ -41,20 +41,18 @@ namespace Rabbit_s_House
             textBox2.DataBindings.Add("text", this.tblKHACHHANG, "SoDT", true);
            
             bindkh = this.BindingContext[tblKHACHHANG];
-
             bindkh.AddNew();
+          
         }
         
         private void button1_Click(object sender, EventArgs e)
         {
-            
             try
             {
-                
                 bindkh.EndCurrentEdit();
                 daKH.Update(tblKHACHHANG);
                 tblKHACHHANG.AcceptChanges();
-                this.Close();
+              
             }
             catch (Exception ex)
             {

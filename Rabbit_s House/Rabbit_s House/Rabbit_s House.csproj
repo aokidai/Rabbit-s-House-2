@@ -58,12 +58,6 @@
     <Compile Include="banhang.Designer.cs">
       <DependentUpon>banhang.cs</DependentUpon>
     </Compile>
-    <Compile Include="cafe.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="cafe.Designer.cs">
-      <DependentUpon>cafe.cs</DependentUpon>
-    </Compile>
     <Compile Include="changepass.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,12 +65,6 @@
       <DependentUpon>changepass.cs</DependentUpon>
     </Compile>
     <Compile Include="ClasFunctionss1.cs" />
-    <Compile Include="dav.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="dav.Designer.cs">
-      <DependentUpon>dav.cs</DependentUpon>
-    </Compile>
     <Compile Include="forgotpass.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,12 +102,6 @@
     <Compile Include="model\Taikhoan.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="nuocngot.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="nuocngot.Designer.cs">
-      <DependentUpon>nuocngot.cs</DependentUpon>
-    </Compile>
     <Compile Include="quanli.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +122,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="safes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="safes.Designer.cs">
+      <DependentUpon>safes.cs</DependentUpon>
+    </Compile>
     <Compile Include="serverlogin.cs" />
     <Compile Include="model\table.cs">
       <SubType>Component</SubType>
@@ -162,14 +150,8 @@
     <EmbeddedResource Include="banhang.resx">
       <DependentUpon>banhang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Cafe.resx">
-      <DependentUpon>cafe.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="changepass.resx">
       <DependentUpon>changepass.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="dav.resx">
-      <DependentUpon>dav.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forgotpass.resx">
       <DependentUpon>forgotpass.cs</DependentUpon>
@@ -186,9 +168,6 @@
     <EmbeddedResource Include="Manager.resx">
       <DependentUpon>Manager.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="nuocngot.resx">
-      <DependentUpon>nuocngot.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -201,6 +180,9 @@
     </Compile>
     <EmbeddedResource Include="quanli.resx">
       <DependentUpon>quanli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="safes.resx">
+      <DependentUpon>safes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Staffs.resx">
       <DependentUpon>Staffs.cs</DependentUpon>

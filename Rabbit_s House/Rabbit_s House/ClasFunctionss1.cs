@@ -13,6 +13,7 @@ using System.Windows.Forms;
 using System.Collections;
 using System.Data.SqlClient;
 using System.IO;
+using Rabbit_s_House.model;
 namespace Rabbit_s_House.Class
 {
     class Functions
@@ -22,8 +23,9 @@ namespace Rabbit_s_House.Class
         public static void Connect()
         {
             Con = new SqlConnection();   //Khởi tạo đối tượng
-            Con.ConnectionString = Model.cnnStr + Application.StartupPath + @"\Quanlybanhang.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
-            Con.Open();                  //Mở kết nối
+            Con.ConnectionString = @"Data Source=.\SQLEXPRESS;AttachDbFilename=" + Application.StartupPath + @"\Rabbit_s_House.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True";
+            Con.Open(); //Mở kết nối
+
             //Kiểm tra kết nối
             if (Con.State == ConnectionState.Open)
                 MessageBox.Show("Kết nối thành công");
@@ -41,6 +43,7 @@ namespace Rabbit_s_House.Class
         }
         public static DataTable GetDataToTable(string sql)
         {
+
             SqlDataAdapter dap = new SqlDataAdapter(); //Định nghĩa đối tượng thuộc lớp SqlDataAdapter
             //Tạo đối tượng thuộc lớp SqlCommand
             dap.SelectCommand = new SqlCommand();
@@ -53,6 +56,7 @@ namespace Rabbit_s_House.Class
         }
         public static void FillCombo(string sql, ComboBox cbo, string ma, string ten)
         {
+
             SqlDataAdapter dap = new SqlDataAdapter(sql, Con);
             DataTable table = new DataTable();
             dap.Fill(table);

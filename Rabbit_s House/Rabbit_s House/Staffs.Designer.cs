@@ -29,13 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmStaffs));
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.tolSpInsert = new System.Windows.Forms.ToolStripButton();
-            this.tolSpEdit = new System.Windows.Forms.ToolStripButton();
-            this.tolSpDelete = new System.Windows.Forms.ToolStripButton();
-            this.tolSpSave = new System.Windows.Forms.ToolStripButton();
-            this.tolSpCannel = new System.Windows.Forms.ToolStripButton();
-            this.tolSpPrint = new System.Windows.Forms.ToolStripButton();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -69,85 +62,17 @@
             this.MaLTK = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
-            this.toolStrip1.SuspendLayout();
+            this.tolSpInsert = new System.Windows.Forms.ToolStripButton();
+            this.tolSpEdit = new System.Windows.Forms.ToolStripButton();
+            this.tolSpDelete = new System.Windows.Forms.ToolStripButton();
+            this.tolSpSave = new System.Windows.Forms.ToolStripButton();
+            this.tolSpCannel = new System.Windows.Forms.ToolStripButton();
+            this.tolSpPrint = new System.Windows.Forms.ToolStripButton();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
+            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // toolStrip1
-            // 
-            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(40, 40);
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tolSpInsert,
-            this.tolSpEdit,
-            this.tolSpDelete,
-            this.tolSpSave,
-            this.tolSpCannel,
-            this.tolSpPrint});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1350, 47);
-            this.toolStrip1.TabIndex = 6;
-            this.toolStrip1.Text = "toolStrip1";
-            // 
-            // tolSpInsert
-            // 
-            this.tolSpInsert.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tolSpInsert.Image = global::Rabbit_s_House.Properties.Resources.icons8_挿入_60;
-            this.tolSpInsert.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tolSpInsert.Name = "tolSpInsert";
-            this.tolSpInsert.Size = new System.Drawing.Size(44, 44);
-            this.tolSpInsert.Text = "Insert";
-            this.tolSpInsert.Click += new System.EventHandler(this.tolSpInsert_Click);
-            // 
-            // tolSpEdit
-            // 
-            this.tolSpEdit.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tolSpEdit.Image = global::Rabbit_s_House.Properties.Resources.icons8_鉛筆_48;
-            this.tolSpEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tolSpEdit.Name = "tolSpEdit";
-            this.tolSpEdit.Size = new System.Drawing.Size(44, 44);
-            this.tolSpEdit.Text = "Edit";
-            this.tolSpEdit.Click += new System.EventHandler(this.tolSpEdit_Click);
-            // 
-            // tolSpDelete
-            // 
-            this.tolSpDelete.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tolSpDelete.Image = global::Rabbit_s_House.Properties.Resources.icons8_削除_52;
-            this.tolSpDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tolSpDelete.Name = "tolSpDelete";
-            this.tolSpDelete.Size = new System.Drawing.Size(44, 44);
-            this.tolSpDelete.Text = "Delete";
-            this.tolSpDelete.Click += new System.EventHandler(this.tolSpDelete_Click);
-            // 
-            // tolSpSave
-            // 
-            this.tolSpSave.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tolSpSave.Image = global::Rabbit_s_House.Properties.Resources.icons8_セーブ_50;
-            this.tolSpSave.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tolSpSave.Name = "tolSpSave";
-            this.tolSpSave.Size = new System.Drawing.Size(44, 44);
-            this.tolSpSave.Text = "Save";
-            this.tolSpSave.Click += new System.EventHandler(this.tolSpSave_Click);
-            // 
-            // tolSpCannel
-            // 
-            this.tolSpCannel.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tolSpCannel.Image = global::Rabbit_s_House.Properties.Resources.icons8_元に戻す_48;
-            this.tolSpCannel.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tolSpCannel.Name = "tolSpCannel";
-            this.tolSpCannel.Size = new System.Drawing.Size(44, 44);
-            this.tolSpCannel.Text = "Cannel";
-            this.tolSpCannel.Click += new System.EventHandler(this.tolSpCannel_Click);
-            // 
-            // tolSpPrint
-            // 
-            this.tolSpPrint.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tolSpPrint.Image = global::Rabbit_s_House.Properties.Resources.icons8_プリント_48;
-            this.tolSpPrint.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tolSpPrint.Name = "tolSpPrint";
-            this.tolSpPrint.Size = new System.Drawing.Size(44, 44);
-            this.tolSpPrint.Text = "Print";
             // 
             // label1
             // 
@@ -488,6 +413,81 @@
             this.txtTimKiem.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTimKiem_KeyPress);
             this.txtTimKiem.MouseDown += new System.Windows.Forms.MouseEventHandler(this.txtTimKiem_MouseDown);
             // 
+            // tolSpInsert
+            // 
+            this.tolSpInsert.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tolSpInsert.Image = global::Rabbit_s_House.Properties.Resources.icons8_挿入_60;
+            this.tolSpInsert.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tolSpInsert.Name = "tolSpInsert";
+            this.tolSpInsert.Size = new System.Drawing.Size(44, 44);
+            this.tolSpInsert.Text = "Insert";
+            this.tolSpInsert.Click += new System.EventHandler(this.tolSpInsert_Click);
+            // 
+            // tolSpEdit
+            // 
+            this.tolSpEdit.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tolSpEdit.Image = global::Rabbit_s_House.Properties.Resources.icons8_鉛筆_48;
+            this.tolSpEdit.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tolSpEdit.Name = "tolSpEdit";
+            this.tolSpEdit.Size = new System.Drawing.Size(44, 44);
+            this.tolSpEdit.Text = "Edit";
+            this.tolSpEdit.Click += new System.EventHandler(this.tolSpEdit_Click);
+            // 
+            // tolSpDelete
+            // 
+            this.tolSpDelete.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tolSpDelete.Image = global::Rabbit_s_House.Properties.Resources.icons8_削除_52;
+            this.tolSpDelete.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tolSpDelete.Name = "tolSpDelete";
+            this.tolSpDelete.Size = new System.Drawing.Size(44, 44);
+            this.tolSpDelete.Text = "Delete";
+            this.tolSpDelete.Click += new System.EventHandler(this.tolSpDelete_Click);
+            // 
+            // tolSpSave
+            // 
+            this.tolSpSave.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tolSpSave.Image = global::Rabbit_s_House.Properties.Resources.icons8_セーブ_50;
+            this.tolSpSave.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tolSpSave.Name = "tolSpSave";
+            this.tolSpSave.Size = new System.Drawing.Size(44, 44);
+            this.tolSpSave.Text = "Save";
+            this.tolSpSave.Click += new System.EventHandler(this.tolSpSave_Click);
+            // 
+            // tolSpCannel
+            // 
+            this.tolSpCannel.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tolSpCannel.Image = global::Rabbit_s_House.Properties.Resources.icons8_元に戻す_48;
+            this.tolSpCannel.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tolSpCannel.Name = "tolSpCannel";
+            this.tolSpCannel.Size = new System.Drawing.Size(44, 44);
+            this.tolSpCannel.Text = "Cannel";
+            this.tolSpCannel.Click += new System.EventHandler(this.tolSpCannel_Click);
+            // 
+            // tolSpPrint
+            // 
+            this.tolSpPrint.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tolSpPrint.Image = global::Rabbit_s_House.Properties.Resources.icons8_プリント_48;
+            this.tolSpPrint.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tolSpPrint.Name = "tolSpPrint";
+            this.tolSpPrint.Size = new System.Drawing.Size(44, 44);
+            this.tolSpPrint.Text = "Print";
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(40, 40);
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tolSpInsert,
+            this.tolSpEdit,
+            this.tolSpDelete,
+            this.tolSpSave,
+            this.tolSpCannel,
+            this.tolSpPrint});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(1350, 47);
+            this.toolStrip1.TabIndex = 6;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
             // frmStaffs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -505,25 +505,17 @@
             this.Name = "frmStaffs";
             this.Text = "Staffs";
             this.Load += new System.EventHandler(this.frmStaffs_Load);
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).EndInit();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton tolSpInsert;
-        private System.Windows.Forms.ToolStripButton tolSpEdit;
-        private System.Windows.Forms.ToolStripButton tolSpDelete;
-        private System.Windows.Forms.ToolStripButton tolSpSave;
-        private System.Windows.Forms.ToolStripButton tolSpCannel;
-        private System.Windows.Forms.ToolStripButton tolSpPrint;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -557,5 +549,12 @@
         private System.Windows.Forms.RadioButton radNu;
         private System.Windows.Forms.RadioButton radNam;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ToolStripButton tolSpInsert;
+        private System.Windows.Forms.ToolStripButton tolSpEdit;
+        private System.Windows.Forms.ToolStripButton tolSpDelete;
+        private System.Windows.Forms.ToolStripButton tolSpSave;
+        private System.Windows.Forms.ToolStripButton tolSpCannel;
+        private System.Windows.Forms.ToolStripButton tolSpPrint;
+        private System.Windows.Forms.ToolStrip toolStrip1;
     }
 }

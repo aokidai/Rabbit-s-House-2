@@ -50,9 +50,9 @@ namespace Rabbit_s_House
         }
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            banhang bh = new banhang();
-            bh.MdiParent = this;
-            bh.Show();
+            safes sf = new safes();
+            sf.MdiParent = this;
+            sf.Show();
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)

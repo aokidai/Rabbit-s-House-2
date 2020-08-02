@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using System.Collections;
 using System.Data.SqlClient;
 using System.IO;
-using Rabbit_s_House.Class;
+using Rabbit_s_House.model;
 using COMExcel = Microsoft.Office.Interop.Excel;
 
 namespace Rabbit_s_House
