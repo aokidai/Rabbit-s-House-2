@@ -85,7 +85,6 @@ C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbi
 C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.frmForgotpass.resources
 C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.frmLogin.resources
 C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.frmIndex.resources
-C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.frmManager.resources
 C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.Properties.Resources.resources
 C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.frmQuanLi.resources
 C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.frmStaffs.resources
@@ -93,7 +92,6 @@ C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbi
 C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s House.csproj.CoreCompileInputs.cache
 C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit's House.exe
 C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit's House.pdb
-C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s House.csprojAssemblyReference.cache
 C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.frmThemSP.resources
 C:\Users\Dat\Desktop\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s House.csprojAssemblyReference.cache
 C:\Users\Dat\Desktop\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.about.resources
@@ -184,3 +182,9 @@ C:\Users\Dat\Desktop\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Ra
 C:\Users\Dat\Desktop\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.Manager.resources
 C:\Users\Dat\Desktop\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.themkhach.resources
 C:\Users\Dat\Desktop\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.safes.resources
+C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s House.csproj.ResolveComReference.cache
+C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.banhang.resources
+C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.Manager.resources
+C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.safes.resources
+C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s_House.themkhach.resources
+C:\Users\toyam\OneDrive\デスクトップ\Rabbit-s-House-2\Rabbit_s House\Rabbit_s House\obj\Debug\Rabbit_s House.csprojAssemblyReference.cache

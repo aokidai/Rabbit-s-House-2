@@ -17,8 +17,8 @@ namespace Rabbit_s_House
         {
             InitializeComponent();
         }
-        DataTable tblMon;
-        SqlDataAdapter daMon;
+        DataTable tblMon, tblLoaisp;
+        SqlDataAdapter daMon, daLoaisp;
         BindingManagerBase DSMon;
         bool capNhat = false;
 
@@ -27,9 +27,12 @@ namespace Rabbit_s_House
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             tblMon = new DataTable();
             daMon = new SqlDataAdapter("Select * from Mon", Model.cnnStr);
+            tblLoaisp = new DataTable();
+            daLoaisp = new SqlDataAdapter("Select * from loaisp", Model.cnnStr);
             try
             {
                 daMon.Fill(tblMon);
+                daLoaisp.Fill(tblLoaisp);
             }
             catch (SqlException ex)
             {
@@ -37,9 +40,11 @@ namespace Rabbit_s_House
             }
             var cmb = new SqlCommandBuilder(daMon);
             loaddgvMon();
+            loadcboLoai();
             txtMaMon.DataBindings.Add("text", tblMon, "MaMon", true);
             txtTenMon.DataBindings.Add("text", tblMon, "TenMon", true);
             txtGia.DataBindings.Add("text", tblMon, "Gia", true);
+            cboLoai.DataBindings.Add("text", tblMon, "maLoai", true);
             pHinh.DataBindings.Add("image", tblMon, "hinh", true);
             DSMon = this.BindingContext[tblMon];
             enableButton();
@@ -54,6 +59,12 @@ namespace Rabbit_s_House
             btnTimKiem.Enabled = !capNhat;
             tolSpSave.Enabled = capNhat;
             tolSpCannel.Enabled = capNhat;
+        }
+        private void loadcboLoai()
+        {
+            cboLoai.DataSource = tblLoaisp;
+            cboLoai.DisplayMember = "maLoai";
+            cboLoai.ValueMember = "maLoai";
         }
         private void loaddgvMon()
         {

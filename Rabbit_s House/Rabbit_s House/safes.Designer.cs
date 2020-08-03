@@ -36,32 +36,28 @@
             this.tolSpSave = new System.Windows.Forms.ToolStripButton();
             this.tolSpCannel = new System.Windows.Forms.ToolStripButton();
             this.tolSpPrint = new System.Windows.Forms.ToolStripButton();
-            this.cboTenNV = new System.Windows.Forms.ComboBox();
-            this.datetime = new System.Windows.Forms.DateTimePicker();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.grbTTC = new System.Windows.Forms.GroupBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.grbTTM = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtSoLuong = new System.Windows.Forms.TextBox();
-            this.cboTenMon = new System.Windows.Forms.ComboBox();
-            this.cboLoai = new System.Windows.Forms.ComboBox();
-            this.dgvHD = new System.Windows.Forms.DataGridView();
-            this.TenMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Loai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ThanhTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Loai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenMon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvHD = new System.Windows.Forms.DataGridView();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cboTenNV = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.cboLoai = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.cboTenMon = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.cboTenKH = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtSoLuong = new System.Windows.Forms.TextBox();
             this.toolStrip1.SuspendLayout();
-            this.grbTTC.SuspendLayout();
-            this.grbTTM.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHD)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -76,7 +72,7 @@
             this.tolSpPrint});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1350, 47);
+            this.toolStrip1.Size = new System.Drawing.Size(1800, 47);
             this.toolStrip1.TabIndex = 7;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -139,131 +135,54 @@
             this.tolSpPrint.Size = new System.Drawing.Size(44, 44);
             this.tolSpPrint.Text = "Print";
             // 
-            // cboTenNV
+            // ThanhTien
             // 
-            this.cboTenNV.FormattingEnabled = true;
-            this.cboTenNV.Location = new System.Drawing.Point(124, 201);
-            this.cboTenNV.Name = "cboTenNV";
-            this.cboTenNV.Size = new System.Drawing.Size(246, 21);
-            this.cboTenNV.TabIndex = 15;
+            this.ThanhTien.HeaderText = "Thành Tiền";
+            this.ThanhTien.MinimumWidth = 6;
+            this.ThanhTien.Name = "ThanhTien";
+            this.ThanhTien.Width = 125;
             // 
-            // datetime
+            // SoLuong
             // 
-            this.datetime.Location = new System.Drawing.Point(112, 68);
-            this.datetime.Name = "datetime";
-            this.datetime.Size = new System.Drawing.Size(246, 20);
-            this.datetime.TabIndex = 14;
+            this.SoLuong.HeaderText = "Số Lượng";
+            this.SoLuong.MinimumWidth = 6;
+            this.SoLuong.Name = "SoLuong";
+            this.SoLuong.Width = 125;
             // 
-            // label3
+            // SoDT
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(16, 68);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 13);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Ngày bán";
+            this.SoDT.HeaderText = "Số Điện Thoại";
+            this.SoDT.MinimumWidth = 6;
+            this.SoDT.Name = "SoDT";
+            this.SoDT.Width = 125;
             // 
-            // label4
+            // TenKH
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(16, 120);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 13);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Tên Nhân Viên";
+            this.TenKH.HeaderText = "Tên K.Hàng";
+            this.TenKH.MinimumWidth = 6;
+            this.TenKH.Name = "TenKH";
+            this.TenKH.Width = 125;
             // 
-            // grbTTC
+            // TenNV
             // 
-            this.grbTTC.BackColor = System.Drawing.Color.Transparent;
-            this.grbTTC.Controls.Add(this.cboTenKH);
-            this.grbTTC.Controls.Add(this.label8);
-            this.grbTTC.Controls.Add(this.datetime);
-            this.grbTTC.Controls.Add(this.label3);
-            this.grbTTC.Controls.Add(this.label4);
-            this.grbTTC.Location = new System.Drawing.Point(12, 77);
-            this.grbTTC.Name = "grbTTC";
-            this.grbTTC.Size = new System.Drawing.Size(1315, 221);
-            this.grbTTC.TabIndex = 16;
-            this.grbTTC.TabStop = false;
-            this.grbTTC.Text = "Thông Tin Chung";
+            this.TenNV.HeaderText = "Tên Nhân Viên";
+            this.TenNV.MinimumWidth = 6;
+            this.TenNV.Name = "TenNV";
+            this.TenNV.Width = 125;
             // 
-            // label8
+            // Loai
             // 
-            this.label8.Location = new System.Drawing.Point(492, 51);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(99, 30);
-            this.label8.TabIndex = 16;
-            this.label8.Text = "Tên Khách Hàng";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Loai.HeaderText = "Loại";
+            this.Loai.MinimumWidth = 6;
+            this.Loai.Name = "Loai";
+            this.Loai.Width = 125;
             // 
-            // grbTTM
+            // TenMon
             // 
-            this.grbTTM.BackColor = System.Drawing.Color.Transparent;
-            this.grbTTM.Controls.Add(this.label1);
-            this.grbTTM.Controls.Add(this.label2);
-            this.grbTTM.Controls.Add(this.label6);
-            this.grbTTM.Controls.Add(this.txtSoLuong);
-            this.grbTTM.Controls.Add(this.cboTenMon);
-            this.grbTTM.Controls.Add(this.cboLoai);
-            this.grbTTM.Location = new System.Drawing.Point(12, 319);
-            this.grbTTM.Name = "grbTTM";
-            this.grbTTM.Size = new System.Drawing.Size(1315, 99);
-            this.grbTTM.TabIndex = 16;
-            this.grbTTM.TabStop = false;
-            this.grbTTM.Text = "Thông Tin Chung";
-            // 
-            // label1
-            // 
-            this.label1.Location = new System.Drawing.Point(802, 44);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 30);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "Số Lượng";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(32, 54);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(27, 13);
-            this.label2.TabIndex = 16;
-            this.label2.Text = "Loại";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Location = new System.Drawing.Point(442, 54);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(49, 13);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Tên món";
-            // 
-            // txtSoLuong
-            // 
-            this.txtSoLuong.Location = new System.Drawing.Point(907, 54);
-            this.txtSoLuong.Name = "txtSoLuong";
-            this.txtSoLuong.Size = new System.Drawing.Size(246, 20);
-            this.txtSoLuong.TabIndex = 17;
-            // 
-            // cboTenMon
-            // 
-            this.cboTenMon.FormattingEnabled = true;
-            this.cboTenMon.Location = new System.Drawing.Point(508, 51);
-            this.cboTenMon.Name = "cboTenMon";
-            this.cboTenMon.Size = new System.Drawing.Size(246, 21);
-            this.cboTenMon.TabIndex = 15;
-            // 
-            // cboLoai
-            // 
-            this.cboLoai.FormattingEnabled = true;
-            this.cboLoai.Location = new System.Drawing.Point(126, 51);
-            this.cboLoai.Name = "cboLoai";
-            this.cboLoai.Size = new System.Drawing.Size(246, 21);
-            this.cboLoai.TabIndex = 15;
-            this.cboLoai.SelectedIndexChanged += new System.EventHandler(this.cboLoai_SelectedIndexChanged);
+            this.TenMon.HeaderText = "Tên Món";
+            this.TenMon.MinimumWidth = 6;
+            this.TenMon.Name = "TenMon";
+            this.TenMon.Width = 125;
             // 
             // dgvHD
             // 
@@ -276,76 +195,137 @@
             this.SoDT,
             this.SoLuong,
             this.ThanhTien});
-            this.dgvHD.Location = new System.Drawing.Point(17, 434);
+            this.dgvHD.Location = new System.Drawing.Point(23, 501);
+            this.dgvHD.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dgvHD.Name = "dgvHD";
-            this.dgvHD.Size = new System.Drawing.Size(1310, 203);
+            this.dgvHD.RowHeadersWidth = 51;
+            this.dgvHD.Size = new System.Drawing.Size(1747, 234);
             this.dgvHD.TabIndex = 17;
             // 
-            // TenMon
+            // groupBox1
             // 
-            this.TenMon.HeaderText = "Tên Món";
-            this.TenMon.Name = "TenMon";
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.txtSoLuong);
+            this.groupBox1.Controls.Add(this.cboTenNV);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.cboTenKH);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.cboTenMon);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.cboLoai);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Location = new System.Drawing.Point(28, 74);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(1239, 393);
+            this.groupBox1.TabIndex = 18;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Thông tin";
             // 
-            // Loai
+            // label2
             // 
-            this.Loai.HeaderText = "Loại";
-            this.Loai.Name = "Loai";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(37, 64);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(73, 15);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Nhân Viên";
             // 
-            // TenNV
+            // cboTenNV
             // 
-            this.TenNV.HeaderText = "Tên Nhân Viên";
-            this.TenNV.Name = "TenNV";
+            this.cboTenNV.FormattingEnabled = true;
+            this.cboTenNV.Location = new System.Drawing.Point(104, 68);
+            this.cboTenNV.Name = "cboTenNV";
+            this.cboTenNV.Size = new System.Drawing.Size(302, 23);
+            this.cboTenNV.TabIndex = 1;
             // 
-            // TenKH
+            // label3
             // 
-            this.TenKH.HeaderText = "Tên K.Hàng";
-            this.TenKH.Name = "TenKH";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(29, 173);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(32, 15);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Loại";
             // 
-            // SoDT
+            // cboLoai
             // 
-            this.SoDT.HeaderText = "Số Điện Thoại";
-            this.SoDT.Name = "SoDT";
+            this.cboLoai.FormattingEnabled = true;
+            this.cboLoai.Location = new System.Drawing.Point(96, 177);
+            this.cboLoai.Name = "cboLoai";
+            this.cboLoai.Size = new System.Drawing.Size(302, 23);
+            this.cboLoai.TabIndex = 1;
             // 
-            // SoLuong
+            // label4
             // 
-            this.SoLuong.HeaderText = "Số Lượng";
-            this.SoLuong.Name = "SoLuong";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(523, 173);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(34, 15);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Món";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // ThanhTien
+            // cboTenMon
             // 
-            this.ThanhTien.HeaderText = "Thành Tiền";
-            this.ThanhTien.Name = "ThanhTien";
+            this.cboTenMon.FormattingEnabled = true;
+            this.cboTenMon.Location = new System.Drawing.Point(590, 177);
+            this.cboTenMon.Name = "cboTenMon";
+            this.cboTenMon.Size = new System.Drawing.Size(302, 23);
+            this.cboTenMon.TabIndex = 1;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(548, 65);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(84, 15);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Khách Hàng";
             // 
             // cboTenKH
             // 
             this.cboTenKH.FormattingEnabled = true;
-            this.cboTenKH.Location = new System.Drawing.Point(597, 59);
+            this.cboTenKH.Location = new System.Drawing.Point(615, 69);
             this.cboTenKH.Name = "cboTenKH";
-            this.cboTenKH.Size = new System.Drawing.Size(246, 21);
-            this.cboTenKH.TabIndex = 18;
+            this.cboTenKH.Size = new System.Drawing.Size(302, 23);
+            this.cboTenKH.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(1011, 173);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(62, 15);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Số Lượng";
+            // 
+            // txtSoLuong
+            // 
+            this.txtSoLuong.Location = new System.Drawing.Point(1090, 166);
+            this.txtSoLuong.Name = "txtSoLuong";
+            this.txtSoLuong.Size = new System.Drawing.Size(193, 22);
+            this.txtSoLuong.TabIndex = 2;
             // 
             // safes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Rabbit_s_House.Properties.Resources.bg;
-            this.ClientSize = new System.Drawing.Size(1350, 649);
+            this.ClientSize = new System.Drawing.Size(1800, 749);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvHD);
-            this.Controls.Add(this.cboTenNV);
             this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.grbTTM);
-            this.Controls.Add(this.grbTTC);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "safes";
             this.Text = "safes";
             this.Load += new System.EventHandler(this.safes_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            this.grbTTC.ResumeLayout(false);
-            this.grbTTC.PerformLayout();
-            this.grbTTM.ResumeLayout(false);
-            this.grbTTM.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHD)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -360,27 +340,24 @@
         private System.Windows.Forms.ToolStripButton tolSpSave;
         private System.Windows.Forms.ToolStripButton tolSpCannel;
         private System.Windows.Forms.ToolStripButton tolSpPrint;
-        private System.Windows.Forms.ComboBox cboTenNV;
-        private System.Windows.Forms.DateTimePicker datetime;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.GroupBox grbTTC;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.GroupBox grbTTM;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox cboTenMon;
-        private System.Windows.Forms.ComboBox cboLoai;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtSoLuong;
-        private System.Windows.Forms.DataGridView dgvHD;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenMon;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Loai;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenNV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenKH;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SoDT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SoLuong;
         private System.Windows.Forms.DataGridViewTextBoxColumn ThanhTien;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoLuong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoDT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenKH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenNV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Loai;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenMon;
+        private System.Windows.Forms.DataGridView dgvHD;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox txtSoLuong;
+        private System.Windows.Forms.ComboBox cboTenNV;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cboTenKH;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox cboTenMon;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox cboLoai;
+        private System.Windows.Forms.Label label3;
     }
 }
