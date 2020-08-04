@@ -47,6 +47,8 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.datetime = new System.Windows.Forms.DateTimePicker();
             this.txtTien = new System.Windows.Forms.TextBox();
+            this.txtMaHDBan = new System.Windows.Forms.TextBox();
+            this.txtgia = new System.Windows.Forms.TextBox();
             this.txtSoLuong = new System.Windows.Forms.TextBox();
             this.cboTenNV = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -54,15 +56,13 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.cboTenMon = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.cboLoai = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txtMaHDBan = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtgia = new System.Windows.Forms.TextBox();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHD)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -263,6 +263,22 @@
             this.txtTien.Size = new System.Drawing.Size(146, 20);
             this.txtTien.TabIndex = 2;
             // 
+            // txtMaHDBan
+            // 
+            this.txtMaHDBan.Location = new System.Drawing.Point(94, 19);
+            this.txtMaHDBan.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtMaHDBan.Name = "txtMaHDBan";
+            this.txtMaHDBan.Size = new System.Drawing.Size(146, 20);
+            this.txtMaHDBan.TabIndex = 2;
+            // 
+            // txtgia
+            // 
+            this.txtgia.Location = new System.Drawing.Point(708, 101);
+            this.txtgia.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtgia.Name = "txtgia";
+            this.txtgia.Size = new System.Drawing.Size(146, 20);
+            this.txtgia.TabIndex = 2;
+            // 
             // txtSoLuong
             // 
             this.txtSoLuong.Location = new System.Drawing.Point(374, 153);
@@ -270,6 +286,7 @@
             this.txtSoLuong.Name = "txtSoLuong";
             this.txtSoLuong.Size = new System.Drawing.Size(146, 20);
             this.txtSoLuong.TabIndex = 2;
+            this.txtSoLuong.TextChanged += new System.EventHandler(this.txtSoLuong_TextChanged);
             // 
             // cboTenNV
             // 
@@ -329,6 +346,26 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "Thành Tiền";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(29, 21);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(68, 13);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Mã Hóa Đơn";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(643, 103);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(23, 13);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Giá";
+            // 
             // cboTenMon
             // 
             this.cboTenMon.FormattingEnabled = true;
@@ -367,6 +404,7 @@
             this.cboLoai.Name = "cboLoai";
             this.cboLoai.Size = new System.Drawing.Size(228, 21);
             this.cboLoai.TabIndex = 1;
+            this.cboLoai.SelectedIndexChanged += new System.EventHandler(this.cboLoai_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -377,42 +415,6 @@
             this.label3.Size = new System.Drawing.Size(27, 13);
             this.label3.TabIndex = 0;
             this.label3.Text = "Loại";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(29, 21);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(68, 13);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Mã Hóa Đơn";
-            // 
-            // txtMaHDBan
-            // 
-            this.txtMaHDBan.Location = new System.Drawing.Point(94, 19);
-            this.txtMaHDBan.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.txtMaHDBan.Name = "txtMaHDBan";
-            this.txtMaHDBan.Size = new System.Drawing.Size(146, 20);
-            this.txtMaHDBan.TabIndex = 2;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(643, 103);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(23, 13);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Giá";
-            // 
-            // txtgia
-            // 
-            this.txtgia.Location = new System.Drawing.Point(708, 101);
-            this.txtgia.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.txtgia.Name = "txtgia";
-            this.txtgia.Size = new System.Drawing.Size(146, 20);
-            this.txtgia.TabIndex = 2;
             // 
             // safes
             // 

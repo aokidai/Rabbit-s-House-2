@@ -19,16 +19,16 @@ namespace Rabbit_s_House
         {
             InitializeComponent();
         }
-        DataTable tblKhachHang, tblMon, tblNhanVien, tblLoai;
+        DataTable tblKhachHang, tblMon, tblNhanVien, tblLoai,tblhoadon;
         DataTable tblCTHD;
-        SqlDataAdapter daCTHD, daKhachHang, daMon, daNhanVien, daLoai;
-        BindingManagerBase DSHD;
+        SqlDataAdapter daCTHD, daKhachHang, daMon, daNhanVien, daLoai,dahd;
+        BindingManagerBase DSCTHD,DSHD;
         bool capNhat = false;
 
         private void cboLoai_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cboLoai.SelectedIndex >= 0)  // Check co chon
-                tblMon.DefaultView.RowFilter = "MaLoai='" + cboLoai.SelectedValue + "'";
+                tblMon.DefaultView.RowFilter = "MaLoai='" + cboLoai.Text + "'";
         }
 
         private void safes_Load(object sender, EventArgs e)
@@ -44,11 +44,14 @@ namespace Rabbit_s_House
             daKhachHang = new SqlDataAdapter("Select * from KhachHang", Model.cnnStr);
             tblLoai = new DataTable();
             daLoai = new SqlDataAdapter("Select * from Loaisp", Model.cnnStr);
+            tblhoadon = new DataTable();
+            dahd = new SqlDataAdapter("select * from hoadon", Model.cnnStr);
             try
             {
                 daLoai.Fill(tblLoai);
                 //thaayf oi em sai cho nay
                 //roi ok roi a thay
+                dahd.Fill(tblhoadon);
                 daCTHD.Fill(tblCTHD);
                 daMon.Fill(tblMon);
                 daKhachHang.Fill(tblKhachHang);
@@ -59,34 +62,36 @@ namespace Rabbit_s_House
                 MessageBox.Show(ex.ToString());
             }
             var cmb = new SqlCommandBuilder(daCTHD);
+            var cmb2 = new SqlCommandBuilder(dahd);
             loadcboTenNV();
             loadcboTenKH();
             loadcboTenMon();
             loadcboLoai();
             loadDGVHoaDon();
             
-            cboTenNV.DataBindings.Add("text", tblCTHD, "MaNV", true);
-            cboTenKH.DataBindings.Add("text", tblCTHD, "MaKh", true);
-            datetime.DataBindings.Add("text", tblCTHD, "Ngaylap", true);
+            cboTenNV.DataBindings.Add("text", tblhoadon, "MaNV", true);
+            cboTenKH.DataBindings.Add("text", tblhoadon, "MaKh", true);
+            datetime.DataBindings.Add("text", tblhoadon, "Ngaylap", true);
+            DSHD = this.BindingContext[tblhoadon];
             cboLoai.DataBindings.Add("text", tblCTHD, "MaLoai", true);
             cboTenMon.DataBindings.Add("text", tblCTHD, "MaMon", true);
             txtSoLuong.DataBindings.Add("text", tblCTHD, "Soluong", true);
             txtTien.DataBindings.Add("text", tblCTHD, "ThanhTien", true);
             txtgia.DataBindings.Add("text", tblCTHD, "Gia", true);
-            DSHD = this.BindingContext[tblCTHD];
-            //DSHD2 = this.BindingContext[tblHoaDon];
+            DSCTHD = this.BindingContext[tblCTHD];
             enableButton();
             cboLoai_SelectedIndexChanged(sender,e);
-      
+            
+
         }
 
 
 
         private void loadcboTenMon()
         {
-            cboLoai.DataSource = tblLoai;
-            cboLoai.DisplayMember = "MaLoai";
-            cboLoai.ValueMember = "MaLoai";
+            //cboLoai.DataSource = tblLoai;
+            //cboLoai.DisplayMember = "Loai";
+            //cboLoai.ValueMember = "Loai";
 
             // em loai cbLoai di nhe
             //tai sao vay thay???
@@ -96,19 +101,19 @@ namespace Rabbit_s_House
             cboTenMon.DisplayMember = "MaMon";
             cboTenMon.ValueMember = "MaMon";
         }
-        private void loadcboMon()
-        {
+        //private void loadcboMon()
+        //{
 
 
-            cboTenMon.DataSource = tblMon;
-            cboTenMon.DisplayMember = "MaMon";
-            cboTenMon.ValueMember = "MaMon";
-        }
+        //    cboTenMon.DataSource = tblMon;
+        //    cboTenMon.DisplayMember = "MaMon";
+        //    cboTenMon.ValueMember = "MaMon";
+        //}
         private void loadcboLoai()
         {
             cboLoai.DataSource = tblLoai;
             cboLoai.DisplayMember = "MaLoai";
-            cboLoai.ValueMember = "MaLoai";
+            cboLoai.ValueMember = "Loai";
 
             // em loai cbLoai di nhe
             //tai sao vay thay???
@@ -123,7 +128,12 @@ namespace Rabbit_s_House
 
         private void cboTenMon_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            int index = cboTenMon.SelectedIndex;
+            if(index>-1)
+            {
+                txtgia.Text = tblMon.Rows[index][3].ToString();
+                //txtTien.Text = tblCTHD.Rows[index][.ToString();
+            }    
   
         }
         private void loadcboTenNV()
@@ -132,6 +142,16 @@ namespace Rabbit_s_House
             cboTenNV.DisplayMember = "MaNV";
             cboTenNV.ValueMember = "MaNV";
         }
+
+        private void txtSoLuong_TextChanged(object sender, EventArgs e)
+        {
+            //int index = txtSoLuong.EnabledChanged;
+            //if (index > -1)
+            //{
+              
+            //}
+        }
+
         private void enableButton()
         {
             tolSpInsert.Enabled = !capNhat;
@@ -146,6 +166,7 @@ namespace Rabbit_s_House
         {
             
             DSHD.AddNew();
+            DSCTHD.AddNew();
             capNhat = true;
             enableButton();
         }
@@ -153,10 +174,13 @@ namespace Rabbit_s_House
         private void tolSpSave_Click(object sender, EventArgs e)
         {
             // chay thu di
-            //DSHD.AddNew();
+     
             try
             {
                 DSHD.EndCurrentEdit();
+                dahd.Update(tblhoadon);
+                tblhoadon.AcceptChanges();
+                DSCTHD.EndCurrentEdit();
                 daCTHD.Update(tblCTHD);
                 tblCTHD.AcceptChanges();
                 capNhat = false;

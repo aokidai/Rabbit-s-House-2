@@ -66,13 +66,17 @@ CREATE TABLE LOAITK(
 --	MaNV varchar(10) references NhanVien(MaNV),
 --	Ngaylap date,
 --)
+create table hoadon
+(
+MaHD int identity(1,1) primary key,
+Ngaylap date,
+MaKH int references KhachHang(MaKH),
+MaNV varchar(10) references NhanVien(MaNV),
+)
 create table chitiethoadon
 (
 	MaCTHD int identity(1,1) primary key,
-	--MaHD int references hoadon(MaHD),
-	MaKH int references KhachHang(MaKH),
-	MaNV varchar(10) references NhanVien(MaNV),
-	Ngaylap date,
+	MaHD int references hoadon(MaHD),
 	MaMon varchar(5) references Mon(MaMon),
 	Maloai char(10) references Loaisp(MaLoai),
 	Soluong int,
@@ -86,6 +90,7 @@ ALTER TABLE NHANVIEN   ADD  CONSTRAINT FK_NhanVien_LoaiTK FOREIGN KEY(MaLTK) REF
 GO
 /****** Object:  ForeignKey FK_NhanVien_LoaiTK    Script Date: 04/05/2016 14:01:49 ******/
 ALTER TABLE CHAMCONG   ADD  CONSTRAINT FK_ChamCong_NhanVien FOREIGN KEY(MaNV) REFERENCES NHANVIEN (MaNV)
+alter table chitiethoadon add constraint soluong1 default 0 for Soluong
 GO
 
 insert into loaisp values('Cafe','cafe')
