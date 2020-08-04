@@ -27,7 +27,7 @@ namespace Rabbit_s_House
         {
             tblKHACHHANG = new DataTable();
             daKH = new SqlDataAdapter("Select * from KhachHang", Model.cnnStr);
-            daKH = new SqlDataAdapter("Select * from KhachHang", Model.cnnStr);
+            
             try
             {
                 daKH.Fill(tblKHACHHANG);
@@ -38,7 +38,7 @@ namespace Rabbit_s_House
             }
             var cmb = new SqlCommandBuilder(daKH);
             textBox1.DataBindings.Add("text", tblKHACHHANG, "HoTen", true);
-            textBox2.DataBindings.Add("text", this.tblKHACHHANG, "SoDT", true);
+            textBox2.DataBindings.Add("text", tblKHACHHANG, "SoDT", true);
            
             bindkh = this.BindingContext[tblKHACHHANG];
 

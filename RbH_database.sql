@@ -31,7 +31,7 @@ create table Mon
 	MaMon varchar(5) primary key,
 	TenMon nvarchar(50),
 	maLoai char(10) references loaisp(maloai),
-	Gia varchar(10),
+	Gia money,
 	hinh image NULL,
 )
 
@@ -75,7 +75,7 @@ create table chitiethoadon
 	Ngaylap date,
 	MaMon varchar(5) references Mon(MaMon),
 	Maloai char(10) references Loaisp(MaLoai),
-	Soluong char(2),
+	Soluong int,
 	ThanhTien money,
 	
 )
@@ -112,3 +112,7 @@ insert into LOAITK values(3,N'Nhân Viên Quản Lý Kho')
 insert into NHANVIEN values('NV0001', N'Aoki Daisuke', 1 ,N'Osaka','123456', 'aokidaisuke91@gmail.com','admin','123',1)
 insert into NHANVIEN values('NV0002', N'Trần Tiến Đạt', 1 ,N'An Giang', '0913131788', 'đâtt@gmail.com','nvdat','123',2)
 insert into NHANVIEN values('NV0003', N'Nguyễn Kim Ngân',0 ,N'Bình Dương', '098123733', 'vinhquang@gmail.com','nkngan','123',3)
+
+
+select ThanhTien=Soluong*gia from chitiethoadon c, Mon m where c.MaMon=m.MaMon
+

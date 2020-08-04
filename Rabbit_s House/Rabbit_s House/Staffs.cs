@@ -18,7 +18,7 @@ namespace Rabbit_s_House
         bool capNhat = false;
         private void frmStaffs_Load(object sender, EventArgs e)
         {
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            //this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             tblNhanVien = new DataTable();
             daNhanVien = new SqlDataAdapter("Select * from NHANVIEN", Model.cnnStr);
             try

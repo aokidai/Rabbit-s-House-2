@@ -26,13 +26,13 @@ namespace Rabbit_s_House
 
         //private void cboLoai_SelectedIndexChanged(object sender, EventArgs e)
         //{
-        //    if(cboLoai.SelectedIndex>=0)  // Check co chon
-        //        tblMon.DefaultView.RowFilter = "maLoai=" + cboLoai.SelectedValue;
+        //    if (cboLoai.SelectedIndex >= 0)  // Check co chon
+        //        tblMon.DefaultView.RowFilter = "maLoai='" + cboLoai.SelectedValue + "'";
         //}
 
         private void safes_Load(object sender, EventArgs e)
         {
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            //this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             tblCTHD = new DataTable();
             daCTHD = new SqlDataAdapter("Select * from chitiethoadon", Model.cnnStr);
             tblMon = new DataTable();
@@ -66,10 +66,11 @@ namespace Rabbit_s_House
             
             cboTenNV.DataBindings.Add("text", tblCTHD, "MaNV", true);
             cboTenKH.DataBindings.Add("text", tblCTHD, "MaKh", true);
-            //datetime.DataBindings.Add("text", tblHoaDon, "Ngaylap", true);
+            datetime.DataBindings.Add("text", tblCTHD, "Ngaylap", true);
             cboLoai.DataBindings.Add("text", tblCTHD, "MaLoai", true);
             cboTenMon.DataBindings.Add("text", tblCTHD, "MaMon", true);
             txtSoLuong.DataBindings.Add("text", tblCTHD, "Soluong", true);
+            txtTien.DataBindings.Add("text", tblCTHD, "ThanhTien", true);
             DSHD = this.BindingContext[tblCTHD];
             //DSHD2 = this.BindingContext[tblHoaDon];
             enableButton();
@@ -82,27 +83,24 @@ namespace Rabbit_s_House
             cboTenNV.ValueMember = "MaNV";
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
+    
         //private void loadcboMon()
         //{
-        //    cboLoai.DisplayMember = "Loai";
-        //    cboLoai.ValueMember = "MaLoai";
         //    cboLoai.DataSource = tblLoai;
+        //    cboLoai.DisplayMember = "MaLoai";
+        //    cboLoai.ValueMember = "MaLoai";
+
         //    // em loai cbLoai di nhe
         //    //tai sao vay thay???
         //    // Vi CSDL em thiet ke ma, em mo CSDL
 
         //    cboTenMon.DataSource = tblMon;
-        //    cboTenMon.DisplayMember = "TenMon";
+        //    cboTenMon.DisplayMember = "MaMon";
         //    cboTenMon.ValueMember = "MaMon";
         //}
         private void loadcboMon()
         {
-           
+
 
             cboTenMon.DataSource = tblMon;
             cboTenMon.DisplayMember = "MaMon";
@@ -110,10 +108,10 @@ namespace Rabbit_s_House
         }
         private void loadcboLoai()
         {
-            cboLoai.DataSource = tblLoai; 
+            cboLoai.DataSource = tblLoai;
             cboLoai.DisplayMember = "MaLoai";
             cboLoai.ValueMember = "MaLoai";
-            
+
             // em loai cbLoai di nhe
             //tai sao vay thay???
             // Vi CSDL em thiet ke ma, em mo CSDL
@@ -124,6 +122,9 @@ namespace Rabbit_s_House
             cboTenKH.DisplayMember = "MaKH";
             cboTenKH.ValueMember = "MaKH";
         }
+        
+        
+
         private void enableButton()
         {
             tolSpInsert.Enabled = !capNhat;
@@ -131,6 +132,7 @@ namespace Rabbit_s_House
             tolSpEdit.Enabled = !capNhat;
             tolSpSave.Enabled = capNhat;
             tolSpCannel.Enabled = capNhat;
+            groupBox1.Enabled = capNhat;
         }
 
         private void tolSpInsert_Click(object sender, EventArgs e)
@@ -193,6 +195,7 @@ namespace Rabbit_s_House
         {
             dgvHD.AutoGenerateColumns = false;
             dgvHD.DataSource = tblCTHD;
+            //dgvHD.Columns[5] = ("select ThanhTien=Soluong*gia from chitiethoadon c, Mon m where c.MaMon=m.MaMon");
         }
 
     }

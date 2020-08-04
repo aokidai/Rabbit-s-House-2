@@ -23,7 +23,7 @@ namespace Rabbit_s_House
 
         private void frmQuanLi_Load(object sender, EventArgs e)
         {
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            //this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             tblMon = new DataTable();
             daMon = new SqlDataAdapter("Select * from Mon", Model.cnnStr);
             try

@@ -53,6 +53,7 @@ namespace Rabbit_s_House
             safes sf = new safes();
             sf.MdiParent = this;
             sf.Show();
+            
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -76,6 +77,7 @@ namespace Rabbit_s_House
             frmQuanLi fQ = new frmQuanLi();
             fQ.MdiParent = this;
             fQ.Show();
+           
         }
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
@@ -98,6 +100,7 @@ namespace Rabbit_s_House
                 fChP = new frmChangepass();
                 fChP.MdiParent = this;
                 fChP.Show();
+                
             }
             else
             {
@@ -111,6 +114,7 @@ namespace Rabbit_s_House
             frmStaffs fSp = new frmStaffs();
             fSp.MdiParent = this;
             fSp.Show();
+            
         }
 
         private void foodToolStripMenuItem_Click(object sender, EventArgs e)
@@ -118,12 +122,15 @@ namespace Rabbit_s_House
             frmThemSP fFd = new frmThemSP();
             fFd.MdiParent = this;
             fFd.Show();
+            
         }
 
         private void kháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
             themkhach kh = new themkhach();
+            kh.MdiParent = this;
             kh.Show();
+
         }
     }
 }
