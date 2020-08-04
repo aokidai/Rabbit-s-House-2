@@ -76,6 +76,7 @@ create table chitiethoadon
 	MaMon varchar(5) references Mon(MaMon),
 	Maloai char(10) references Loaisp(MaLoai),
 	Soluong int,
+	Gia money,
 	ThanhTien money,
 	
 )
@@ -114,5 +115,20 @@ insert into NHANVIEN values('NV0002', N'Trần Tiến Đạt', 1 ,N'An Giang', '
 insert into NHANVIEN values('NV0003', N'Nguyễn Kim Ngân',0 ,N'Bình Dương', '098123733', 'vinhquang@gmail.com','nkngan','123',3)
 
 
-select ThanhTien=Soluong*gia from chitiethoadon c, Mon m where c.MaMon=m.MaMon
+CREATE TRIGGER TRG_KTRA_KQ ON dbo.chitiethoadon
+AFTER UPDATE, INSERT
+AS
+	BEGIN TRANSACTION
+		DECLARE @MaCTHD int, @Soluong int, @Gia money,@Thanhtien money
+		SELECT @MaCTHD=MaCTHD,@Soluong = Soluong, @Gia = Gia FROM INSERTED
+		SELECT @Thanhtien = @Soluong*@Gia FROM DBO.chitiethoadon 
+		UPDATE dbo.chitiethoadon SET thanhtien = @thanhtien WHERE MaCTHD=@MaCTHD
+		IF(@@ERROR != 0)
+	BEGIN
+		RAISERROR(N'KHONG THE UPDATE DU LIEU', 0 , 1)
+		ROLLBACK TRANSACTION
+	END
+		ELSE COMMIT TRANSACTION
+GO
+
 

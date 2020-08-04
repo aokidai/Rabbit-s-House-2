@@ -21,7 +21,9 @@ namespace Rabbit_s_House
     {
         public static string cnnStr = "Data Source=.;Initial Catalog=Rabbit_s_House;Integrated Security=True";
         public static SqlConnection cnn = new SqlConnection(cnnStr);
+      
        
-       
+
+
     }
 }
