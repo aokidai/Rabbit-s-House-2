@@ -30,7 +30,14 @@ namespace Rabbit_s_House
             if (cboLoai.SelectedIndex >= 0)  // Check co chon
                 tblMon.DefaultView.RowFilter = "MaLoai='" + cboLoai.Text + "'";
         }
-
+        //public void FillMyDataSet(DataSet ds)
+        //{
+        //    string sql = "SELECT a.*, b.* FROM chitiethoadon a JOIN hoadon b ON a.MaHD = b.MaHD";
+        //    using (SqlDataAdapter da = new SqlDataAdapter(sql, Model.cnnStr))
+        //    {
+        //        da.Fill(ds, "MyTable");
+        //    }
+        //}
         private void safes_Load(object sender, EventArgs e)
         {
             //this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -46,6 +53,14 @@ namespace Rabbit_s_House
             daLoai = new SqlDataAdapter("Select * from Loaisp", Model.cnnStr);
             tblhoadon = new DataTable();
             dahd = new SqlDataAdapter("select * from hoadon", Model.cnnStr);
+            //SqlDataAdapter adapter = new SqlDataAdapter(
+            //"SELECT * FROM HoaDon; SELECT * FROM chitiethoadon", Model.cnnStr);
+            //adapter.TableMappings.Add("MaNV", "hoadon");
+            //adapter.TableMappings.Add("MaKH", "hoadon");
+            //adapter.TableMappings.Add("MaMon", "chitiethoadon");
+            //adapter.TableMappings.Add("SoLuong", "chitiethoadon");
+            //adapter.TableMappings.Add("ThanhTien", "chitiethoadon");
+            //adapter.TableMappings.Add("NgayLap", "chitiethoadon");
             try
             {
                 daLoai.Fill(tblLoai);
@@ -56,6 +71,8 @@ namespace Rabbit_s_House
                 daMon.Fill(tblMon);
                 daKhachHang.Fill(tblKhachHang);
                 daNhanVien.Fill(tblNhanVien);
+                //adapter.Fill(ds);
+                
             }
             catch (SqlException ex)
             {
@@ -63,12 +80,13 @@ namespace Rabbit_s_House
             }
             var cmb = new SqlCommandBuilder(daCTHD);
             var cmb2 = new SqlCommandBuilder(dahd);
+            
             loadcboTenNV();
             loadcboTenKH();
             loadcboTenMon();
             loadcboLoai();
             loadDGVHoaDon();
-            
+            loaddgv1();
             cboTenNV.DataBindings.Add("text", tblhoadon, "MaNV", true);
             cboTenKH.DataBindings.Add("text", tblhoadon, "MaKh", true);
             datetime.DataBindings.Add("text", tblhoadon, "Ngaylap", true);
@@ -76,7 +94,7 @@ namespace Rabbit_s_House
             cboLoai.DataBindings.Add("text", tblCTHD, "MaLoai", true);
             cboTenMon.DataBindings.Add("text", tblCTHD, "MaMon", true);
             txtSoLuong.DataBindings.Add("text", tblCTHD, "Soluong", true);
-            txtTien.DataBindings.Add("text", tblCTHD, "ThanhTien", true);
+            //txtTien.DataBindings.Add("text", tblCTHD, "ThanhTien", true);
             txtgia.DataBindings.Add("text", tblCTHD, "Gia", true);
             DSCTHD = this.BindingContext[tblCTHD];
             enableButton();
@@ -85,7 +103,7 @@ namespace Rabbit_s_House
 
         }
 
-
+      
 
         private void loadcboTenMon()
         {
@@ -221,13 +239,27 @@ namespace Rabbit_s_House
             capNhat = true;
             enableButton();
         }
-
+        //public void FillMyDataSet(MyDataSet ds)
+        //{
+        //    string sql = "SELECT a.*, b.* FROM MyTable a JOIN MyOtherTable b ON a.key = b.key";
+        //    using (SqlDataAdapter da = new SqlDataAdapter(sql, conn))
+        //    {
+        //        da.Fill(ds, "MyTable");
+        //    }
+        //}
         private void loadDGVHoaDon()
         {
             dgvHD.AutoGenerateColumns = false;
             dgvHD.DataSource = tblCTHD;
+            //MyDataSet dsMine = new MyDataSet();
+            //this.FillMyDataSet(dsMine);
+            //MyGridView.DataSource = dsMine;
             //dgvHD.Columns[5] = ("select ThanhTien=Soluong*gia from chitiethoadon c, Mon m where c.MaMon=m.MaMon");
         }
-
+        private void loaddgv1()
+        {
+            dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.DataSource = tblhoadon;
+        }
     }
 }

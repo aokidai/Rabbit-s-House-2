@@ -68,10 +68,10 @@ CREATE TABLE LOAITK(
 --)
 create table hoadon
 (
-MaHD int identity(1,1) primary key,
-Ngaylap date,
-MaKH int references KhachHang(MaKH),
-MaNV varchar(10) references NhanVien(MaNV),
+	MaHD int identity(1,1) primary key,
+	Ngaylap date,
+	MaKH int references KhachHang(MaKH),
+	MaNV varchar(10) references NhanVien(MaNV),
 )
 create table chitiethoadon
 (
