@@ -85,6 +85,7 @@ namespace Rabbit_s_House
             loadcboTenKH();
             loadcboTenMon();
             loadcboLoai();
+            //loadcboMaHD();
             loadDGVHoaDon();
             loaddgv1();
             cboTenNV.DataBindings.Add("text", tblhoadon, "MaNV", true);
@@ -102,9 +103,12 @@ namespace Rabbit_s_House
             
 
         }
-
-      
-
+        //private void loadcboMaHD()
+        //{
+        //    cboMaHD.DataSource = tblhoadon;
+        //    cboMaHD.DisplayMember = "MaHD";
+        //    cboMaHD.ValueMember = "MaHD";
+        //}
         private void loadcboTenMon()
         {
             //cboLoai.DataSource = tblLoai;
